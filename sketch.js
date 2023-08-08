@@ -13,34 +13,47 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 30,
-  "offsetx": -20,
-  "offsety": 0,
-  "offsetx1": 30, //triangle left corner
-  "offsety1": 100, //triangle left corner
-  "offsetx2": 60, //triangle top corner
-  "offsety2": 20, //triangle top corner
-  "offsetx3": 20,
-  "offsety3": 20,
+  "size": 30, //small circle size
+  "offsetx": -20, //small circle x
+  "offsety": 0, //small circle y
+  "offsetx1": 30, //triangle left corner x
+  "offsety1": 100, //triangle left corner y
+  "offsetx2": 60, //triangle top corner x
+  "offsety2": 20, //triangle top corner y
+  "offsetx3": 90, //triangle right corner x
+  "offsety3": 100, //triangle right corner y
 }
 
 const letterB = {
-  "size": 30,
-  "offsetx": 30,
-  "offsety": 0
+  "size": 30, //small circle size
+  "offsetx": 30,  //small circle x
+  "offsety": 0, //small circle y
+  "offsetx1": -30, //triangle left corner x
+  "offsety1": -150, //triangle left corner y
+  "offsetx2": -60, //triangle top corner x
+  "offsety2": -400, //triangle top corner y
+  "offsetx3": -90, //triangle right corner x
+  "offsety3": -150, //triangle right corner y 
 }
 
 const letterC = {
-  "size": 55,
-  "offsetx": 50,
-  "offsety": 0
+  // "size": 20, //small circle size
+  // "offsetx": -5,  //small circle x
+  // "offsety": 0, //small circle y
+
+  "offsetx1": 75, //triangle left corner x
+  "offsety1": -520, //triangle left corner y
+  "offsetx2": -10, //triangle top corner x
+  "offsety2": -480, //triangle top corner y
+  "offsetx3": 75, //triangle right corner x
+  "offsety3": -440, //triangle right corner y 
 }
 
-const backgroundColor  = "#caf0f8" //(light blue)
-const strokeColor      = "#03045e";
+const backgroundColor  =  "#a7d7f2"; //"#caf0f8" (light blue)
+const strokeColor      =  "#9cf0e2"//"#03045e";
 
-const darkGreen  =  "#20baad" //"#0077b6";
-const lightGreen  =  "#9cf0e2" //"#90e0ef";
+const darkGreen  =  "#20baad"; //"#0077b6";
+const lightGreen  =  "#9cf0e2"; //"#90e0ef";
 
 function setup () {
   // create the drawing canvas, save the canvas element
@@ -48,7 +61,7 @@ function setup () {
   main_canvas.parent('canvasContainer');
 
   // color/stroke setup
-  
+  noStroke();
   stroke(strokeColor);
   strokeWeight(4);
 
@@ -71,24 +84,25 @@ function draw () {
 }
 
 function drawLetter(posx, posy, letterData) {
-  // determine parameters for second circle
-  let size2 = letterData["size"];
-  let pos2x = posx + letterData["offsetx"];
-  let pos2y = posy + letterData["offsety"];
-  let pos3x = posx + letterData["offsetx1"];
-  let pos3y =  posx + letterData["offsety1"];
-  let pos4x = posx + letterData["offsetx2"];
-  let pos4y =  posx + letterData["offsety2"];
-  let pos5x = posx + letterData["offsetx3"];
-  let pos5y =  posx + letterData["offsety3"];
+  // determine parameters for second circle and triangle
+  let size2 = letterData["size"]; //small circle size
+  let pos2x = posx + letterData["offsetx"]; //small circle x pos
+  let pos2y = posy + letterData["offsety"]; //small circle y pos
+  let pos3x = posx + letterData["offsetx1"]; //triangle left corner x pos
+  let pos3y =  posx + letterData["offsety1"]; //triangle left corner y pos
+  let pos4x = posx + letterData["offsetx2"]; //triangle top corner x pos
+  let pos4y =  posx + letterData["offsety2"]; //triangle top corner y pos
+  let pos5x = posx + letterData["offsetx3"]; //triangle right corner x pos
+  let pos5y =  posx + letterData["offsety3"]; //triangle right corner y pos
 
 
-  // draw two circles
-  fill(darkGreen);
+  // draw one big circle, a small circle, and a triangle
+  fill(darkGreen); //constant big circle
   ellipse(posx, posy, 150);
   fill(lightGreen);
   ellipse(pos2x, pos2y, size2, size2);
-  triangle(pos3x, pos3y, pos4x, 270, 320, 330); //260,330,290,270,320,330
+  triangle(pos3x, pos3y, pos4x, pos4y, pos5x, pos5y); //260,330,290,270,320,330
+  
 }
 
 function keyTyped() {
