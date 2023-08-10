@@ -37,9 +37,9 @@ const letterB = {
 }
 
 const letterC = {
-  // "size": 20, //small circle size
-  // "offsetx": -5,  //small circle x
-  // "offsety": 0, //small circle y
+  "size": 0, //small circle size
+  "offsetx": -5,  //small circle x
+  "offsety": 0, //small circle y
 
   "offsetx1": 75, //triangle left corner x
   "offsety1": -520, //triangle left corner y
@@ -102,7 +102,7 @@ function drawLetter(posx, posy, letterData) {
   fill(lightGreen);
   ellipse(pos2x, pos2y, size2, size2);
   triangle(pos3x, pos3y, pos4x, pos4y, pos5x, pos5y); //260,330,290,270,320,330
-  
+
 }
 
 function keyTyped() {
