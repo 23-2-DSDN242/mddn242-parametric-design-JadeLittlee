@@ -10,6 +10,10 @@ const sliderInfo = [
   ["offsety", -100, 100],
   ["offsetx4", -20, 20],
   ["offsety4", 0, 150],
+  ["offsetx5", -30, 30],
+  ["offsety5", -10, 10],
+  ["offsetx6", -50, 50],
+  ["offsety6", -50, 50],
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
