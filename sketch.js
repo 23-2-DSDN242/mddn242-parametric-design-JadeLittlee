@@ -17,11 +17,14 @@ const letterA = {
   "offsetx": -20, //small circle x
   "offsety": 0, //small circle y
   "offsetx1": 30, //triangle left corner x
-  "offsety1": 100, //triangle left corner y
+  "offsety1": 80, //triangle left corner y
   "offsetx2": 60, //triangle top corner x
-  "offsety2": 20, //triangle top corner y
+  "offsety2": 10, //triangle top corner y
   "offsetx3": 90, //triangle right corner x
-  "offsety3": 100, //triangle right corner y
+  "offsety3": 80, //triangle right corner y
+  "offsetx4": 15, //start of arc
+  "offsety4": 25, //end of arc
+  
 }
 
 const letterB = {
@@ -29,24 +32,24 @@ const letterB = {
   "offsetx": 30,  //small circle x
   "offsety": 0, //small circle y
   "offsetx1": -30, //triangle left corner x
-  "offsety1": -150, //triangle left corner y
+  "offsety1": 80, //triangle left corner y
   "offsetx2": -60, //triangle top corner x
-  "offsety2": -400, //triangle top corner y
+  "offsety2": -150, //triangle top corner y
   "offsetx3": -90, //triangle right corner x
-  "offsety3": -150, //triangle right corner y 
+  "offsety3": 80, //triangle right corner y 
 }
 
 const letterC = {
   "size": 0, //small circle size
-  "offsetx": -5,  //small circle x
+  "offsetx": 0,  //small circle x
   "offsety": 0, //small circle y
 
-  "offsetx1": 75, //triangle left corner x
-  "offsety1": -520, //triangle left corner y
-  "offsetx2": -10, //triangle top corner x
-  "offsety2": -480, //triangle top corner y
-  "offsetx3": 75, //triangle right corner x
-  "offsety3": -440, //triangle right corner y 
+  "offsetx1": 80, //triangle left corner x
+  "offsety1": -40, //triangle left corner y
+  "offsetx2": 0, //triangle top corner x
+  "offsety2": 0, //triangle top corner y
+  "offsetx3": 80, //triangle right corner x
+  "offsety3": 40, //triangle right corner y
 }
 
 const backgroundColor  =  "#a7d7f2"; //"#caf0f8" (light blue)
@@ -89,12 +92,15 @@ function drawLetter(posx, posy, letterData) {
   let pos2x = posx + letterData["offsetx"]; //small circle x pos
   let pos2y = posy + letterData["offsety"]; //small circle y pos
   let pos3x = posx + letterData["offsetx1"]; //triangle left corner x pos
-  let pos3y =  posx + letterData["offsety1"]; //triangle left corner y pos
+  let pos3y =  posy + letterData["offsety1"]; //triangle left corner y pos
   let pos4x = posx + letterData["offsetx2"]; //triangle top corner x pos
-  let pos4y =  posx + letterData["offsety2"]; //triangle top corner y pos
+  let pos4y =  posy + letterData["offsety2"]; //triangle top corner y pos
   let pos5x = posx + letterData["offsetx3"]; //triangle right corner x pos
-  let pos5y =  posx + letterData["offsety3"]; //triangle right corner y pos
+  let pos5y =  posy + letterData["offsety3"]; //triangle right corner y pos
 
+
+  let start = posx + letterData["offsetx4"];
+  let stop = posy + letterData["offsety4"];
 
   // draw one big circle, a small circle, and a triangle
   fill(darkGreen); //constant big circle
@@ -102,7 +108,11 @@ function drawLetter(posx, posy, letterData) {
   fill(lightGreen);
   ellipse(pos2x, pos2y, size2, size2);
   triangle(pos3x, pos3y, pos4x, pos4y, pos5x, pos5y); //260,330,290,270,320,330
-
+  // push();
+  // noFill();
+  // strokeWeight(15);
+  // arc(posx, posy, 60, 60, start , stop);
+  // pop();
 }
 
 function keyTyped() {

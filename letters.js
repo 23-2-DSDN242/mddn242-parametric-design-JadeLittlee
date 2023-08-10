@@ -1,18 +1,34 @@
 const alphabet = {
   "default": {
-    "size": 40,
+    "size": 20,
     "offsetx": 0,
-    "offsety": 0
+    "offsety": 0,
   },
   "A": {
-    "size": 40,
+    "size": 15,
     "offsetx": 0,
-    "offsety": 17
+    "offsety": 0,
+
+    "offsetx1": 0, //triangle left corner x
+  "offsety1": 50, //triangle left corner y
+  "offsetx2": 20, //triangle top corner x
+  "offsety2": -10, //triangle top corner y
+  "offsetx3": 40, //triangle right corner x
+  "offsety3": 50, //triangle right corner y
+
+  "offsetx4": 20, //start of arc
+  "offsety4": 25, //end of arc
+
+  "offsetx5": 30, //top x of line
+  "offsety5": -10, //top y of line
+  "offsetx6": 50, //bottom x of line
+  "offsety6": 50, //bottom y of line
+
   },
   "B": {
-    "size": 75,
+    "size": 15,
     "offsetx": 0,
-    "offsety": -70
+    "offsety": 0
   },
   "C": {
     "size": 50,
