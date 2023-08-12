@@ -32,8 +32,11 @@ function drawLetter(letterData) {
   let pos4y =  150 + letterData["offsety2"]; //triangle top corner y pos
   let pos5x = 50 + letterData["offsetx3"]; //triangle right corner x pos
   let pos5y =  150 + letterData["offsety3"]; //triangle right corner y pos
+
+  let arcx = 50 + letterData["offsetx7"]; //start of arc
   let start = 50 + letterData["offsetx4"]; //start of arc
   let stop = 150 + letterData["offsety4"]; //end of arc
+
   let pos6x = 50 + letterData["offsetx5"]; //top x of line
   let pos6y = 150 + letterData["offsety5"]; // top y of line
   let pos7x = 50 + letterData["offsetx6"]; //bottom x of line
@@ -50,7 +53,7 @@ function drawLetter(letterData) {
   noFill();
   stroke(lightGreen);
   strokeWeight(15);
-  arc(50, 150, 70, 70, start , stop);
+  arc(arcx, 150, 70, 70, start , stop);
 
   stroke(darkGreen);
   strokeWeight(5);
