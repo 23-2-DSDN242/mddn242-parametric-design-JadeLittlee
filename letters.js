@@ -290,10 +290,47 @@ const alphabet = {
 
   },
   "4": {
+    "size": 10, //ellipse size
+    "offsetx": -25, //position x of ellipse
+    "offsety": -60, //position y of ellipse
+
+    "offsetx1": -45, //triangle left corner x
+    "offsety1": -130, //triangle left corner y
+    "offsetx2": -45, //triangle top corner x
+    "offsety2": -40, //triangle top corner y
+    "offsetx3": 10, //triangle right corner x
+    "offsety3": -40, //triangle right corner y
     
+  "offsetx7": 30, //x pos of arc
+  "offsetx4": -20, //start of arc
+  "offsety4": -170, //end of arc
+
+  "offsetx5": 20, //top x of line
+  "offsety5": -60, //top y of line
+  "offsetx6": 20, //bottom x of line
+  "offsety6": 50, //bottom y of line
+
   },
   "5": {
-    
+    "size": 10, //ellipse size
+    "offsetx": 5, //25 //position x of ellipse
+    "offsety": 0, //-130 //position y of ellipse
+
+    "offsetx1": -10, //triangle left corner x
+    "offsety1": -130, //triangle left corner y
+    "offsetx2": -10, //triangle top corner x
+    "offsety2": -60, //triangle top corner y
+    "offsetx3": 50, //triangle right corner x
+    "offsety3": -130, //triangle right corner y
+
+  "offsetx7": 5, //x pos of arc
+  "offsetx4": 275, //start of arc
+  "offsety4": -575, //end of arc
+
+  "offsetx5": 0, //top x of line
+  "offsety5": -140, //top y of line
+  "offsetx6": 40, //bottom x of line
+  "offsety6": -140, //bottom y of line
   },
   "6": {
    

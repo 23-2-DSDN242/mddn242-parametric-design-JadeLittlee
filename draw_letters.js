@@ -22,7 +22,7 @@ function drawLetter(letterData) {
   // stroke(strokeColor);
   // strokeWeight(4);
 
-  // determine parameters for second circle
+  // determine parameters //16 parameters
   let size2 = letterData["size"];
   let pos2x = 50  + letterData["offsetx"];
   let pos2y = 150 + letterData["offsety"];
@@ -59,7 +59,11 @@ function drawLetter(letterData) {
   stroke(darkGreen);
   strokeWeight(5);
   line(pos6x,pos6y,pos7x,pos7y);
- 
+
+  // push();
+  // rotate(90)
+  // rect(20, -50, 2, 25, 15);
+  // pop();
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
@@ -76,6 +80,10 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["offsetx4"] = map(percent, 0, 100, oldObj["offsetx4"], newObj["offsetx4"]);
   new_letter["offsety4"] = map(percent, 0, 100, oldObj["offsety4"], newObj["offsety4"]);
   new_letter["offsetx7"] = map(percent, 0, 100, oldObj["offsetx7"], newObj["offsetx7"]);
+  new_letter["offsetx5"] = map(percent, 0, 100, oldObj["offsetx5"], newObj["offsetx5"]);
+  new_letter["offsetx6"] = map(percent, 0, 100, oldObj["offsetx6"], newObj["offsetx6"]);
+  new_letter["offsety5"] = map(percent, 0, 100, oldObj["offsety5"], newObj["offsety5"]);
+  new_letter["offsety6"] = map(percent, 0, 100, oldObj["offsety6"], newObj["offsety6"]);
   return new_letter;
 }
 
