@@ -9,6 +9,7 @@ var systemBoxColor = "#00c800";
 const darkGreen  =  "#20baad"; //"#0077b6";
 const lightGreen  =  "#9cf0e2"; //"#90e0ef";
 const strokeColor  = "#9cf0e2";
+
 /*
  * Draw the letter given the letterData
  *
@@ -23,45 +24,50 @@ function drawLetter(letterData) {
   // strokeWeight(4);
 
   // determine parameters //16 parameters
-  let size2 = letterData["size"];
-  let pos2x = 50  + letterData["offsetx"];
-  let pos2y = 150 + letterData["offsety"];
-  let pos3x = 50 + letterData["offsetx1"]; //triangle left corner x pos
-  let pos3y =  150 + letterData["offsety1"]; //triangle left corner y pos
-  let pos4x = 50 + letterData["offsetx2"]; //triangle top corner x pos
-  let pos4y =  150 + letterData["offsety2"]; //triangle top corner y pos
-  let pos5x = 50 + letterData["offsetx3"]; //triangle right corner x pos
-  let pos5y =  150 + letterData["offsety3"]; //triangle right corner y pos
+  let size = letterData["size"]; //ellipse size
+  let posx = 50  + letterData["offsetx"]; //ellipse x pos
+  let posy = 150 + letterData["offsety"]; //ellipse y pos
 
-  let arcx = 50 + letterData["offsetx7"]; //x of arc
-  let start = 50 + letterData["offsetx4"]; //start of arc
-  let stop = 150 + letterData["offsety4"]; //end of arc
+  let Triposx1 = 50 + letterData["Trix1"]; //triangle left corner x pos
+  let Triposy1 =  150 + letterData["Triy1"]; //triangle left corner y pos
+  let Triposx2 = 50 + letterData["Trix2"]; //triangle top corner x pos
+  let Triposy2 =  150 + letterData["Triy2"]; //triangle top corner y pos
+  let Triposx3 = 50 + letterData["Trix3"]; //triangle right corner x pos
+  let Triposy3 =  150 + letterData["Triy3"]; //triangle right corner y pos
 
-  let pos6x = 50 + letterData["offsetx5"]; //top x of line
-  let pos6y = 150 + letterData["offsety5"]; // top y of line
-  let pos7x = 50 + letterData["offsetx6"]; //bottom x of line
-  let pos7y = 150 + letterData["offsety6"]; // bottom y of line
+  let Arcx = 50 + letterData["arcx"]; //x of arc
+  let Arcy = 150 + letterData["arcy"]; //y of arc
+  let start =  letterData["arcStart"]; //start of arc
+  let stop =  letterData["arcStop"]; //end of arc
+
+  let lineposx = 50 + letterData["linex"]; //top x of line
+  let lineposy = 150 + letterData["liney"]; // top y of line
+  let lineposx2 = 50 + letterData["linex2"]; //bottom x of line
+  let lineposy2 = 150 + letterData["liney2"]; // bottom y of line
 
  
 
-
+  angleMode(DEGREES);
   fill(darkGreen);
-  triangle(pos3x, pos3y, pos4x, pos4y, pos5x, pos5y);
+  triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
   fill(lightGreen);
-  ellipse(pos2x, pos2y, size2, size2);
-  
+  ellipse(posx, posy, size, size);
+ 
   noFill();
   stroke(lightGreen);
   strokeWeight(15);
-  arc(arcx, 150, 70, 70, start , stop);
+  arc(Arcx, Arcy, 70, 70, start , stop);
 
   stroke(darkGreen);
   strokeWeight(5);
-  line(pos6x,pos6y,pos7x,pos7y);
+  line(lineposx,lineposy,lineposx2,lineposy2);
+  stroke(lightGreen);
+  strokeWeight(4)
+  line(lineposx-5,lineposy,lineposx2-5,lineposy2); //detail?
 
   // push();
-  // rotate(90)
+  // rotate(180)
   // rect(20, -50, 2, 25, 15);
   // pop();
 }
@@ -71,24 +77,28 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
   new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
   new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
-  new_letter["offsetx1"] = map(percent, 0, 100, oldObj["offsetx1"], newObj["offsetx1"]);
-  new_letter["offsetx2"] = map(percent, 0, 100, oldObj["offsetx2"], newObj["offsetx2"]);
-  new_letter["offsetx3"] = map(percent, 0, 100, oldObj["offsetx3"], newObj["offsetx3"]);
-  new_letter["offsety1"] = map(percent, 0, 100, oldObj["offsety1"], newObj["offsety1"]);
-  new_letter["offsety2"] = map(percent, 0, 100, oldObj["offsety2"], newObj["offsety2"]);
-  new_letter["offsety3"] = map(percent, 0, 100, oldObj["offsety3"], newObj["offsety3"]);
-  new_letter["offsetx4"] = map(percent, 0, 100, oldObj["offsetx4"], newObj["offsetx4"]);
-  new_letter["offsety4"] = map(percent, 0, 100, oldObj["offsety4"], newObj["offsety4"]);
-  new_letter["offsetx7"] = map(percent, 0, 100, oldObj["offsetx7"], newObj["offsetx7"]);
-  new_letter["offsetx5"] = map(percent, 0, 100, oldObj["offsetx5"], newObj["offsetx5"]);
-  new_letter["offsetx6"] = map(percent, 0, 100, oldObj["offsetx6"], newObj["offsetx6"]);
-  new_letter["offsety5"] = map(percent, 0, 100, oldObj["offsety5"], newObj["offsety5"]);
-  new_letter["offsety6"] = map(percent, 0, 100, oldObj["offsety6"], newObj["offsety6"]);
+
+  new_letter["Trix1"] = map(percent, 0, 100, oldObj["Trix1"], newObj["Trix1"]);
+  new_letter["Trix2"] = map(percent, 0, 100, oldObj["Trix2"], newObj["Trix2"]);
+  new_letter["Trix3"] = map(percent, 0, 100, oldObj["Trix3"], newObj["Trix3"]);
+  new_letter["Triy1"] = map(percent, 0, 100, oldObj["Triy1"], newObj["Triy1"]);
+  new_letter["Triy2"] = map(percent, 0, 100, oldObj["Triy2"], newObj["Triy2"]);
+  new_letter["Triy3"] = map(percent, 0, 100, oldObj["Triy3"], newObj["Triy3"]);
+
+  new_letter["arcStart"] = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
+  new_letter["arcStop"] = map(percent, 0, 100, oldObj["arcStop"], newObj["arcStop"]);
+  new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
+  new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
+
+  new_letter["linex"] = map(percent, 0, 100, oldObj["linex"], newObj["linex"]);
+  new_letter["linex2"] = map(percent, 0, 100, oldObj["linex2"], newObj["linex2"]);
+  new_letter["liney"] = map(percent, 0, 100, oldObj["liney"], newObj["liney"]);
+  new_letter["liney2"] = map(percent, 0, 100, oldObj["liney2"], newObj["liney2"]);
   return new_letter;
 }
 
-var swapWords = [
-  "ABBAABBA",
-  "CAB?CAB?",
+var swapWords = [ //can have spaces
+  "ABBAABBA", //this is what typeface will be called
+  "12345678",
   "BAAAAAAA"
 ]

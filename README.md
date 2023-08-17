@@ -17,3 +17,7 @@ The parameters used are:
   * `offsety2` : y offset for the triangles top point
    * `offsetx3` : x offset for the triangles right corner
   * `offsety3` : y offset for the triangles right corner
+
+  I wasn't super happy with this initial idea. This is because it felt very flat and didn't have a lot of character to it. I liked the colour palette, so decided to keep that th same. 
+
+  I didn't want to get too complicated with the shapes I was using, so decided to stay away from custom shapes. In my new idea, I went for what could be described as an art deco inspired typeface. I wanted to create this typeface using shapes that complimented each. For example I have paired the softness of the arc with the harshness (in the egdes) of the triangles. 
