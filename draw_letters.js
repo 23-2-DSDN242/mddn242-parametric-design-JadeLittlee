@@ -67,8 +67,8 @@ function drawLetter(letterData) {
   line(lineposx-5,lineposy,lineposx2-5,lineposy2); //detail?
 
   // push();
-  // rotate(180)
-  // rect(20, -50, 2, 25, 15);
+  // rotate(60)
+  // rect(20, -50, 2, 25, 15); //x,y,l,w,curve size
   // pop();
 }
 
@@ -98,7 +98,8 @@ function interpolate_letter(percent, oldObj, newObj) {
 }
 
 var swapWords = [ //can have spaces
-  "ABBAABBA", //this is what typeface will be called
+  "DECOTYPE", //this is what typeface will be called
   "12345678",
-  "BAAAAAAA"
+  "ART DECO",
+  " SIMPLE ",
 ]

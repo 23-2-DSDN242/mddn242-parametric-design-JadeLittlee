@@ -10,12 +10,18 @@ const sliderInfo = [
   ["offsety", -100, 100],
   ["arcStart", 0, 360],
   ["arcStop", 0, 360],
-  ["linex", -30, 30],
-  ["liney", -10, 10],
+  ["linex", -50, 50],
+  ["liney", -50, 50],
   ["linex2", -50, 50],
   ["liney2", -50, 50],
   ["arcx", -50, 50],
   ["arcy", -100, 100],
+  ["Trix1", -100,100],
+  ["Triy1", -100,100],
+  ["Trix2", -100,100],
+  ["Triy2", -100,100],
+  ["Trix3", -100,100],
+  ["Triy3", -100,100],
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
