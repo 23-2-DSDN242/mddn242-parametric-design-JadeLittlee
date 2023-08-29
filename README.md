@@ -1,6 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ihfjUrzT)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11529901&assignment_repo_type=AssignmentRepo)
-## MDDN 242 2023 Assignment 2
+# MDDN 242 2023 Assignment 2
+## DECO TYPE by Jade Little
 
  
 For my intial sketch I wanted the overlapping and ruggedness of the shapes to shine. 
@@ -20,4 +21,12 @@ The parameters used are:
 
   I wasn't super happy with this initial idea. This is because it felt very flat and didn't have a lot of character to it. I liked the colour palette, so decided to keep that th same. 
 
-  I didn't want to get too complicated with the shapes I was using, so decided to stay away from custom shapes. In my new idea, I went for what could be described as an art deco inspired typeface. I wanted to create this typeface using shapes that complimented each. For example I have paired the softness of the arc with the harshness (in the egdes) of the triangles. 
+  I didn't want to get too complicated with the shapes I was using, so decided to stay away from custom shapes. In my new idea, I went for what could be described as an art deco inspired typeface. I wanted to create this typeface using shapes that complimented each other. For example I have paired the softness of the arc with the harshness (in the egdes) of the triangles. 
+
+  I'm very pleased with my choice of shapes that form my letters. In particular, I feel the arc worked extremely well in articulating my letter forms, as a lot of the letters kept a mostly constant form. When the arc wasn't a 3/4 circle form, it was manipulated in such a way that aided in creating the remaining letters – whether that was a subtle curved shape, an almlost full circle or no arc at all. Where possible, I aimed to keep the triangle and line combination consistent (the line placed along one side of the trinagle, but not touching). However, this was not possible for letters such as 'g' and 'q', because I required the line to act as the tail/flick of the letter. 
+
+  I haven't gone for a typical art deco colour palette, rather I wanted to put together a selection of colours that relate to my personality – I am a blue and green lover! 
+
+  Whilst working away on this typeface, I noted how my letterforms were looking rather 2D, and therefore lacked dimension, and interest. This is the complete opposite of what I wanted to achieve, especially considering the fact that I had diverted from my original typeface to this 'Deco Type' typeface, solely because the original idea lacked character and was very flat! Therefore, taking inspiration from lecture/tutorial content in class, I decided to add shadowing to the letters, to provide depth. 
+
+  Overall, I have used 17 parameters for this typeface, and I believe I used each parameter to its full advantage. 

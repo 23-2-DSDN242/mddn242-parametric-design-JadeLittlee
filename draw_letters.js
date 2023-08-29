@@ -90,16 +90,21 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
   new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
 
-  new_letter["linex"] = map(percent, 0, 100, oldObj["linex"], newObj["linex"]);
-  new_letter["linex2"] = map(percent, 0, 100, oldObj["linex2"], newObj["linex2"]);
-  new_letter["liney"] = map(percent, 0, 100, oldObj["liney"], newObj["liney"]);
-  new_letter["liney2"] = map(percent, 0, 100, oldObj["liney2"], newObj["liney2"]);
+  
+    new_letter["linex"] = map(percent, 0, 100, oldObj["linex"], newObj["linex"]);
+    new_letter["linex2"] = map(percent, 0, 100, oldObj["linex2"], newObj["linex2"]);
+    new_letter["liney"] = map(percent, 0, 100, oldObj["liney"], newObj["liney"]);
+    new_letter["liney2"] = map(percent, 0, 100, oldObj["liney2"], newObj["liney2"]);
+    
+  
   return new_letter;
 }
 
 var swapWords = [ //can have spaces
   "DECOTYPE", //this is what typeface will be called
-  "12345678",
   "ART DECO",
   " SIMPLE ",
+  "GEOMETRY",
+  "12345678",
+ 
 ]
