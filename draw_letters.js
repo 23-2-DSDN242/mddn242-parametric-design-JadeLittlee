@@ -43,10 +43,10 @@ function drawLetter(letterData) {
   let lineposy2 = 150 + letterData["liney2"]; // bottom y of line
 
   //shadow of the letters
-push();
-translate(-7,2);
-noStroke();
-angleMode(DEGREES);
+  push();
+  translate(-7,2);
+  noStroke();
+  angleMode(DEGREES);
   fill(shadowcolor);
   triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
