@@ -127,7 +127,7 @@ function interpolate_letter(percent, oldObj, newObj) {
 }
 
 var swapWords = [ //can have spaces
-  "DECOTYPE", //this is what typeface will be called
+  "DECOTYPE", //this is what typeface is called
   "ART DECO",
   " SIMPLE ",
   "GEOMETRY",
