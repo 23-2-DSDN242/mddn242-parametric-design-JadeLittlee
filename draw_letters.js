@@ -85,6 +85,7 @@ function drawLetter(letterData) {
   stroke(darkGreen);
   strokeWeight(5);
   line(lineposx,lineposy,lineposx2,lineposy2);
+
   // stroke(lightGreen);
   // strokeWeight(4)
   // line(lineposx-5,lineposy,lineposx2-5,lineposy2); //detail?
@@ -131,6 +132,7 @@ var swapWords = [ //can have spaces
   "ART DECO",
   " SIMPLE ",
   "GEOMETRY",
+  "STYLISH!",
   "12345678",
  
 ]

@@ -8,7 +8,7 @@ For my intial sketch I wanted the overlapping and ruggedness of the shapes to sh
 
 Each of my letter is created using a large 'base' circle, a triangle and/or a second smaller circle. The 'base' circle is a constant/fixed element. The triangle and/or small circle are controlled by up to 9 parameters (3 parameters for the circle and 6 for the triangle). These paramaters control size and locations of thr shapes.
 
-The parameters used are:
+The parameters used in the skecth.js are:
 * `size` : radius of the second circle
  * `offsetx` : x offset of the second circle relative to the first one
   * `offsety` : y offset of the second circle relative to the first one
@@ -27,6 +27,26 @@ The parameters used are:
 
   I haven't gone for a typical art deco colour palette, rather I wanted to put together a selection of colours that relate to my personality – I am a blue and green lover! 
 
-  Whilst working away on this typeface, I noted how my letterforms were looking rather 2D, and therefore lacked dimension, and interest. This is the complete opposite of what I wanted to achieve, especially considering the fact that I had diverted from my original typeface to this 'Deco Type' typeface, solely because the original idea lacked character and was very flat! Therefore, taking inspiration from lecture/tutorial content in class, I decided to add shadowing to the letters, to provide depth. 
+  Whilst working away on this typeface, I noted how my letterforms were looking rather 2D, and therefore lacked dimension, and interest. This is the complete opposite of what I wanted to achieve, especially considering the fact that I had diverted from my original typeface to this 'Deco Type' typeface, solely because the original idea lacked character and was very flat! Therefore, taking inspiration from lecture/tutorial content in class, I decided to add shadowing to the letters, to provide depth. By adding this shadow to the letterforms, there is a real sense of dimension now, which I feel makes the alphabet feel more lively, and 3D. 
 
   Overall, I have used 17 parameters for this typeface, and I believe I used each parameter to its full advantage. 
+  
+  These are the parameters I used for the final code:
+  * `size` : radius of the circle/ellipse
+  * `offsetx` : x offset of the circle/ellipse
+  * `offsety` : y offset of the circle/ellipse
+  * `Trix1` : triangle left corner x
+  * `Triy1` : triangle left corner y
+  * `Trix2` : triangle top corner x
+  * `Triy2` : triangle top corner y
+  * `Trix3` : triangle right corner x
+  * `Triy3` : triangle right corner y
+  * `arcx`  : x pos of arc
+  * `arcy` : y pos pf arc
+  * `arcStart` : start of arc
+  * `arcStop` : end of arc
+  * `linex` : top x of line
+  * `liney` : top y of line
+  * `linex2` : bottom x of line
+  * `liney2` : bottom y of line
+
