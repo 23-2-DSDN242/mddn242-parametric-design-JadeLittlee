@@ -9,6 +9,7 @@ var systemBoxColor = "#00c800";
 const darkGreen  =  "#20baad"; //"#0077b6";
 const lightGreen  =  "#9cf0e2"; //"#90e0ef";
 const strokeColor  = "#9cf0e2";
+const shadowcolor = "#6890a6";
 
 /*
  * Draw the letter given the letterData
@@ -18,10 +19,6 @@ const strokeColor  = "#9cf0e2";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
-  // color/stroke setup
-  noStroke();
-  // stroke(strokeColor);
-  // strokeWeight(4);
 
   // determine parameters //16 parameters
   let size = letterData["size"]; //ellipse size
@@ -45,7 +42,33 @@ function drawLetter(letterData) {
   let lineposx2 = 50 + letterData["linex2"]; //bottom x of line
   let lineposy2 = 150 + letterData["liney2"]; // bottom y of line
 
+  //shadow of the letters
+push();
+translate(-7,2);
+noStroke();
+angleMode(DEGREES);
+  fill(shadowcolor);
+  triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
+
+  fill(shadowcolor);
+  ellipse(posx, posy, size, size);
  
+  noFill();
+  stroke(shadowcolor);
+  strokeWeight(15);
+  arc(Arcx, Arcy, 70, 70, start , stop);
+
+  stroke(shadowcolor);
+  strokeWeight(5);
+  line(lineposx,lineposy,lineposx2,lineposy2);
+  pop();
+ 
+
+  //main code for letters
+  
+  noStroke(); // color/stroke setup
+  // stroke(strokeColor);
+  // strokeWeight(4);
 
   angleMode(DEGREES);
   fill(darkGreen);
@@ -62,14 +85,17 @@ function drawLetter(letterData) {
   stroke(darkGreen);
   strokeWeight(5);
   line(lineposx,lineposy,lineposx2,lineposy2);
-  stroke(lightGreen);
-  strokeWeight(4)
-  line(lineposx-5,lineposy,lineposx2-5,lineposy2); //detail?
+  // stroke(lightGreen);
+  // strokeWeight(4)
+  // line(lineposx-5,lineposy,lineposx2-5,lineposy2); //detail?
 
   // push();
   // rotate(60)
   // rect(20, -50, 2, 25, 15); //x,y,l,w,curve size
   // pop();
+
+  
+
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
