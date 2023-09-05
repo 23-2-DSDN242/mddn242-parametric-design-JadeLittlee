@@ -21,7 +21,6 @@ const shadowcolor = "#6890a6";
 function drawLetter(letterData) {
 
   // determine parameters //16 parameters
-  let size = letterData["size"]; //ellipse size
   let posx = 50  + letterData["offsetx"]; //ellipse x pos
   let posy = 150 + letterData["offsety"]; //ellipse y pos
 
@@ -51,7 +50,7 @@ function drawLetter(letterData) {
   triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
   fill(shadowcolor);
-  ellipse(posx, posy, size, size);
+  ellipse(posx, posy, 10);
  
   noFill();
   stroke(shadowcolor);
@@ -75,7 +74,7 @@ function drawLetter(letterData) {
   triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
   fill(lightGreen);
-  ellipse(posx, posy, size, size);
+  ellipse(posx, posy, 10);
  
   noFill();
   stroke(lightGreen);
@@ -99,31 +98,90 @@ function drawLetter(letterData) {
 
 }
 
-function interpolate_letter(percent, oldObj, newObj) {
-  let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
-  new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
-  new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
+// function interpolate_letter(percent, oldObj, newObj) {
+//   let new_letter = {};
+  
+//   new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
+//   new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
 
-  new_letter["Trix1"] = map(percent, 0, 100, oldObj["Trix1"], newObj["Trix1"]);
-  new_letter["Trix2"] = map(percent, 0, 100, oldObj["Trix2"], newObj["Trix2"]);
-  new_letter["Trix3"] = map(percent, 0, 100, oldObj["Trix3"], newObj["Trix3"]);
-  new_letter["Triy1"] = map(percent, 0, 100, oldObj["Triy1"], newObj["Triy1"]);
-  new_letter["Triy2"] = map(percent, 0, 100, oldObj["Triy2"], newObj["Triy2"]);
-  new_letter["Triy3"] = map(percent, 0, 100, oldObj["Triy3"], newObj["Triy3"]);
+//   new_letter["Trix1"] = map(percent, 0, 100, oldObj["Trix1"], newObj["Trix1"]);
+//   new_letter["Trix2"] = map(percent, 0, 100, oldObj["Trix2"], newObj["Trix2"]);
+//   new_letter["Trix3"] = map(percent, 0, 100, oldObj["Trix3"], newObj["Trix3"]);
+//   new_letter["Triy1"] = map(percent, 0, 100, oldObj["Triy1"], newObj["Triy1"]);
+//   new_letter["Triy2"] = map(percent, 0, 100, oldObj["Triy2"], newObj["Triy2"]);
+//   new_letter["Triy3"] = map(percent, 0, 100, oldObj["Triy3"], newObj["Triy3"]);
 
-  new_letter["arcStart"] = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
-  new_letter["arcStop"] = map(percent, 0, 100, oldObj["arcStop"], newObj["arcStop"]);
-  new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
-  new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
+//   new_letter["arcStart"] = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
+//   new_letter["arcStop"] = map(percent, 0, 100, oldObj["arcStop"], newObj["arcStop"]);
+//   new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
+//   new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
 
   
-    new_letter["linex"] = map(percent, 0, 100, oldObj["linex"], newObj["linex"]);
-    new_letter["linex2"] = map(percent, 0, 100, oldObj["linex2"], newObj["linex2"]);
-    new_letter["liney"] = map(percent, 0, 100, oldObj["liney"], newObj["liney"]);
-    new_letter["liney2"] = map(percent, 0, 100, oldObj["liney2"], newObj["liney2"]);
+//     new_letter["linex"] = map(percent, 0, 100, oldObj["linex"], newObj["linex"]);
+//     new_letter["linex2"] = map(percent, 0, 100, oldObj["linex2"], newObj["linex2"]);
+//     new_letter["liney"] = map(percent, 0, 100, oldObj["liney"], newObj["liney"]);
+//     new_letter["liney2"] = map(percent, 0, 100, oldObj["liney2"], newObj["liney2"]);
     
   
+//   return new_letter;
+// }
+
+function interpolate_letter(percent, oldObj, newObj) {
+  let new_letter = {};
+  if(percent < 30){ //animation starts with old letter and goes to the default character
+    new_letter["offsetx"]  = map(percent, 0, 40, oldObj["offsetx"], 0);
+    new_letter["offsety"]     = map(percent, 0, 40, oldObj["offsety"], 0);
+    new_letter["Trix1"]   = map(percent, 0, 40, oldObj["Trix1"], 0);
+    new_letter["Trix2"]    = map(percent, 0, 40, oldObj["Trix2"], 0);
+    new_letter["Trix3"]    = map(percent, 0, 40, oldObj["Trix3"], 0);
+    new_letter["Triy1"]    = map(percent, 0, 40, oldObj["Triy1"], 0);
+    new_letter["Triy2"]       = map(percent, 0, 40, oldObj["Triy2"], 0);
+    new_letter["Triy3"]      = map(percent, 0, 40, oldObj["Triy3"], 0);
+    new_letter["arcStart"]        = map(percent, 0, 40, oldObj["arcStart"], 0);
+    new_letter["arcStop"]     = map(percent, 0, 40, oldObj["arcStop"], 0);
+    new_letter["arcx"]        = map(percent, 0, 40, oldObj["arcx"], 0);
+    new_letter["arcy"]     = map(percent, 0, 40, oldObj["arcy"], 0);
+    new_letter["linex"]        = map(percent, 0, 40, oldObj["linex"], 0);
+    new_letter["linex2"]     = map(percent, 0, 40, oldObj["linex2"], 0);
+    new_letter["liney"]        = map(percent, 0, 40, oldObj["liney"], 0);
+    new_letter["liney2"]     = map(percent, 0, 40, oldObj["liney2"], 0);
+  }
+  else if(percent >=30 && percent < 60){ //default character from 40% to 60%
+    new_letter["offsetx"]  = map(percent, 30, 60, 0, 0);
+    new_letter["offsety"]     = map(percent, 30, 60, 0, 0);
+    new_letter["Trix1"]   = map(percent, 30, 60, 0, 0);
+    new_letter["Trix2"]    = map(percent, 30, 60, 0, 0);
+    new_letter["Trix3"]    = map(percent, 30, 60, 0, 0);
+    new_letter["Triy1"]    = map(percent, 30, 60, 0, 0);
+    new_letter["Triy2"]       = map(percent, 30, 60, 0, 0);
+    new_letter["Triy3"]      = map(percent, 30, 60, 0, 0);
+    new_letter["arcStart"]        = map(percent, 30, 60, 0, 0);
+    new_letter["arcStop"]     = map(percent, 30, 60, 0, 0);
+    new_letter["arcx"]        = map(percent, 30, 60, 0, 0);
+    new_letter["arcy"]     = map(percent, 30, 60, 0, 0);
+    new_letter["linex"]        = map(percent, 30, 60, 0, 0);
+    new_letter["linex2"]     = map(percent, 30, 60, 0, 0);
+    new_letter["liney"]        = map(percent, 30, 60, 0, 0);
+    new_letter["liney2"]     = map(percent, 30, 60, 0, 0);
+   }
+  else if (percent >=60){ //second part of animation from default character to new letter
+    new_letter["offsetx"]  = map(percent, 60, 100, 0, newObj["offsetx"]);
+    new_letter["offsety"]     = map(percent, 60, 100, 0, newObj["offsety"]);
+    new_letter["Trix1"]   = map(percent, 60, 100, 0, newObj["Trix1"]);
+    new_letter["Trix2"]    = map(percent, 60, 100, 0, newObj["Trix2"]);
+    new_letter["Trix3"]    = map(percent, 60, 100, 0, newObj["Trix3"]);
+    new_letter["Triy1"]    = map(percent, 60, 100, 0, newObj["Triy1"]);
+    new_letter["Triy2"]       = map(percent, 60, 100, 0, newObj["Triy2"]);
+    new_letter["Triy3"]      = map(percent, 60, 100, 0, newObj["Triy3"]);
+    new_letter["arcStart"]        = map(percent, 60, 100, 0, newObj["arcStart"]);
+    new_letter["arcStop"]     = map(percent, 60, 100, 0, newObj["arcStop"]);
+    new_letter["arcx"]        = map(percent, 60, 100, 0, newObj["arcx"]);
+    new_letter["arcy"]     = map(percent, 60, 100, 0, newObj["arcy"]);
+    new_letter["linex"]        = map(percent, 60, 100, 0, newObj["linex"]);
+    new_letter["linex2"]     = map(percent, 60, 100, 0, newObj["linex2"]);
+    new_letter["liney"]        = map(percent, 60, 100, 0, newObj["liney"]);
+    new_letter["liney2"]     = map(percent, 60, 100, 0, newObj["liney2"]);
+}
   return new_letter;
 }
 

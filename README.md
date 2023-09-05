@@ -29,10 +29,9 @@ The parameters used in the skecth.js are:
 
   Whilst working away on this typeface, I noted how my letterforms were looking rather 2D, and therefore lacked dimension, and interest. This is the complete opposite of what I wanted to achieve, especially considering the fact that I had diverted from my original typeface to this 'Deco Type' typeface, solely because the original idea lacked character and was very flat! Therefore, taking inspiration from lecture/tutorial content in class, I decided to add shadowing to the letters, to provide depth. By adding this shadow to the letterforms, there is a real sense of dimension now, which I feel makes the alphabet feel more lively, and 3D. 
 
-  Overall, I have used 17 parameters for this typeface, and I believe I used each parameter to its full advantage. 
+  Overall, I have used 16 parameters for this typeface, and I believe I used each parameter to its full advantage. 
   
   These are the parameters I used for the final code:
-  * `size` : radius of the circle/ellipse
   * `offsetx` : x offset of the circle/ellipse
   * `offsety` : y offset of the circle/ellipse
   * `Trix1` : triangle left corner x

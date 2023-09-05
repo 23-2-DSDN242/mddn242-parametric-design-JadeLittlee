@@ -1,6 +1,5 @@
 const alphabet = {
   "default": { 
-    "size": 10, //ellipse size
     "offsetx": 0, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -23,7 +22,6 @@ const alphabet = {
 
   },
   "A": {
-    "size": 10, //ellipse size
     "offsetx": -10, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -46,7 +44,7 @@ const alphabet = {
 
   },
   "B": {
-    "size": 10, //ellipse size
+    
     "offsetx": 10, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -69,7 +67,7 @@ const alphabet = {
 
   },
   "C": {
-    "size": 10, //ellipse size
+    
     "offsetx": 30, //position x of ellipse
     "offsety": -35, //position y of ellipse
 
@@ -92,7 +90,7 @@ const alphabet = {
 
   },
   "D": {
-    "size": 10, //ellipse size
+    
     "offsetx": -10, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -116,7 +114,7 @@ const alphabet = {
   },
   "E": {
 
-    "size": 10, //ellipse size
+   
     "offsetx": 0, //position x of ellipse
     "offsety": -15, //position y of ellipse
 
@@ -140,7 +138,6 @@ const alphabet = {
   },
   "F": {
 
-    "size": 10, //ellipse size
     "offsetx": 11.4, //position x of ellipse
     "offsety": -50, //position y of ellipse
 
@@ -163,7 +160,7 @@ const alphabet = {
     
   },
   "G": {
-    "size": 10, //ellipse size
+    
     "offsetx": -10, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -187,7 +184,6 @@ const alphabet = {
   },
   "H": {
 
-    "size": 10, //ellipse size
     "offsetx": 40, //position x of ellipse
     "offsety": 15, //position y of ellipse
 
@@ -211,7 +207,6 @@ const alphabet = {
   },
   "I": {
 
-    "size": 10, //ellipse size
     "offsetx": -5, //position x of ellipse
     "offsety": -80, //position y of ellipse
 
@@ -235,7 +230,6 @@ const alphabet = {
   },
   "J": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //position x of ellipse
     "offsety": -80, //position y of ellipse
 
@@ -259,7 +253,6 @@ const alphabet = {
   },
   "K": {
 
-    "size": 10, //ellipse size
     "offsetx": 15, //position x of ellipse
     "offsety": -5, //position y of ellipse
 
@@ -283,7 +276,6 @@ const alphabet = {
   },
   "L": {
 
-    "size": 10, //ellipse size
     "offsetx": -25, //position x of ellipse
     "offsety": -30, //position y of ellipse
 
@@ -307,7 +299,6 @@ const alphabet = {
   },
   "M": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //position x of ellipse
     "offsety": -10, //position y of ellipse
    
@@ -330,7 +321,7 @@ const alphabet = {
 
   },
   "N": {
-    "size": 10, //ellipse size
+    
     "offsetx": 40, //position x of ellipse
     "offsety": 15, //position y of ellipse
 
@@ -354,7 +345,6 @@ const alphabet = {
   },
   "O": {
 
-    "size": 10, //ellipse size
     "offsetx": 30, //position x of ellipse
     "offsety": -20, //position y of ellipse
 
@@ -377,7 +367,7 @@ const alphabet = {
    
   },
   "P": {
-    "size": 10, //ellipse size
+   
     "offsetx": 10, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -400,7 +390,7 @@ const alphabet = {
     
   },
   "Q": {
-    "size": 10, //ellipse size
+    
     "offsetx": -10, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
@@ -424,7 +414,6 @@ const alphabet = {
    },
   "R": {
 
-    "size": 10, //ellipse size
     "offsetx": 40, //position x of ellipse
     "offsety": -10, //position y of ellipse
 
@@ -448,7 +437,6 @@ const alphabet = {
   },
   "S": {
 
-    "size": 10, //ellipse size
     "offsetx": 10, //position x of ellipse
     "offsety": -20, //position y of ellipse
 
@@ -473,7 +461,6 @@ const alphabet = {
   },
   "T": {
 
-    "size": 10, //ellipse size
     "offsetx": 35, //position x of ellipse
     "offsety": -50, //position y of ellipse
 
@@ -496,7 +483,7 @@ const alphabet = {
     
   },
   "U": {
-    "size": 10, //ellipse size
+    
     "offsetx": -40, //position x of ellipse
     "offsety": -15, //position y of ellipse
 
@@ -520,7 +507,6 @@ const alphabet = {
   },
   "V": {
 
-    "size": 10, //ellipse size
     "offsetx": -5, //position x of ellipse
     "offsety": -20, //position y of ellipse
 
@@ -544,7 +530,6 @@ const alphabet = {
   },
   "W": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //position x of ellipse
     "offsety": 0, //position y of ellipse
    
@@ -567,7 +552,7 @@ const alphabet = {
     
   },
   "X": {
-    "size": 10, //ellipse size
+   
     "offsetx": 25, //25 //position x of ellipse
     "offsety": 0, //-130 //position y of ellipse
 
@@ -591,7 +576,6 @@ const alphabet = {
   },
   "Y": {
 
-    "size": 10, //ellipse size
     "offsetx": -35, //position x of ellipse
     "offsety": -40, //position y of ellipse
 
@@ -615,7 +599,6 @@ const alphabet = {
   },
   "Z": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //25 //position x of ellipse
     "offsety": -35, //-130 //position y of ellipse
 
@@ -639,7 +622,6 @@ const alphabet = {
   },
   "0": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //position x of ellipse
     "offsety": -130, //position y of ellipse
 
@@ -663,7 +645,6 @@ const alphabet = {
   },
   "1": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //position x of ellipse
     "offsety": -120, //position y of ellipse
 
@@ -689,7 +670,6 @@ const alphabet = {
   },
   "2": {
 
-    "size": 10, //ellipse size
     "offsetx": -10, //position x of ellipse
     "offsety": -100, //position y of ellipse
 
@@ -712,7 +692,7 @@ const alphabet = {
    
   },
   "3": {
-    "size": 10, //ellipse size
+    
     "offsetx": 5, //25 //position x of ellipse
     "offsety": 0, //-130 //position y of ellipse
 
@@ -735,7 +715,7 @@ const alphabet = {
 
   },
   "4": {
-    "size": 10, //ellipse size
+  
     "offsetx": 40, //position x of ellipse
     "offsety": -42, //position y of ellipse
 
@@ -758,7 +738,7 @@ const alphabet = {
 
   },
   "5": {
-    "size": 10, //ellipse size
+   
     "offsetx": 5, //25 //position x of ellipse
     "offsety": 0, //-130 //position y of ellipse
 
@@ -781,7 +761,6 @@ const alphabet = {
   },
   "6": {
 
-    "size": 10, //ellipse size
     "offsetx": 0, //25 //position x of ellipse
     "offsety": 0, //-130 //position y of ellipse
 
@@ -805,7 +784,6 @@ const alphabet = {
   },
   "7": {
 
-    "size": 10, //ellipse size
     "offsetx": 10, //25 //position x of ellipse
     "offsety": -120, //-130 //position y of ellipse
 
@@ -828,7 +806,7 @@ const alphabet = {
     
   },
   "8": {
-    "size": 10, //ellipse size
+   
     "offsetx": 0, //position x of ellipse
     "offsety": -100, //position y of ellipse
 
@@ -852,7 +830,6 @@ const alphabet = {
   },
   "9": {
 
-    "size": 10, //ellipse size
     "offsetx": -10, //position x of ellipse
     "offsety": -100, //position y of ellipse
 
@@ -877,9 +854,9 @@ const alphabet = {
   },
 
   "!": { 
-    "size": 10, //ellipse size
+   
     "offsetx": 5, //position x of ellipse
-    "offsety": 30, //position y of ellipse
+    "offsety": 40, //position y of ellipse
 
     "Trix1": 0, //triangle left corner x
     "Triy1": 0, //triangle left corner y
@@ -901,9 +878,9 @@ const alphabet = {
   },
 
   "?": { 
-    "size": 10, //ellipse size
+    
     "offsetx": 5, //position x of ellipse
-    "offsety": 30, //position y of ellipse
+    "offsety": 40, //position y of ellipse
 
     "Trix1": 0, //triangle left corner x
     "Triy1": 0, //triangle left corner y
@@ -915,7 +892,7 @@ const alphabet = {
     "arcx": 0, //x pos of arc
     "arcy": -100, //y pos pf arc
     "arcStart": 190, //start of arc
-  "arcStop": 420, //end of arc
+    "arcStop": 420, //end of arc
     
     "linex":5, //top x of line
     "liney": -50, //top y of line
