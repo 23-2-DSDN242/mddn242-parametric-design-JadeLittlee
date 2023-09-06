@@ -12,8 +12,8 @@ const alphabet = {
 
   "arcx": 0, //x pos of arc
   "arcy": 0, //y pos pf arc
-  "arcStart": 0, //start of arc
-  "arcStop": 0, //end of arc
+  "arcStart": 183.6, //start of arc
+  "arcStop": 180, //end of arc
   
   "linex": 0, //top x of line
   "liney": 0, //top y of line

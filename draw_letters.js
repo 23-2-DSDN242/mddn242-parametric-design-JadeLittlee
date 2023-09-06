@@ -146,7 +146,7 @@ function interpolate_letter(percent, oldObj, newObj) {
     new_letter["liney"]        = map(percent, 0, 40, oldObj["liney"], 0);
     new_letter["liney2"]     = map(percent, 0, 40, oldObj["liney2"], 0);
   }
-  else if(percent >=30 && percent < 60){ //default character from 40% to 60%
+  else if(percent >=30 && percent < 60){ //default character from 30% to 60%
     new_letter["offsetx"]  = map(percent, 30, 60, 0, 0);
     new_letter["offsety"]     = map(percent, 30, 60, 0, 0);
     new_letter["Trix1"]   = map(percent, 30, 60, 0, 0);
@@ -182,6 +182,11 @@ function interpolate_letter(percent, oldObj, newObj) {
     new_letter["liney"]        = map(percent, 60, 100, 0, newObj["liney"]);
     new_letter["liney2"]     = map(percent, 60, 100, 0, newObj["liney2"]);
 }
+  // new_letter["arcStart"] = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
+  // new_letter["arcStop"] = map(percent, 0, 100, oldObj["arcStop"], newObj["arcStop"]);
+  // new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
+  // new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
+
   return new_letter;
 }
 
