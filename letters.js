@@ -3,12 +3,12 @@ const alphabet = {
     "offsetx": 0, //position x of ellipse
     "offsety": 0, //position y of ellipse
 
-    "Trix1": 0, //triangle left corner x
-  "Triy1": 0, //triangle left corner y
-  "Trix2": 0, //triangle top corner x
-  "Triy2": 0, //triangle top corner y
-  "Trix3": 0, //triangle right corner x
-  "Triy3": 0, //triangle right corner y
+    "Trix1": -32, //triangle left corner x
+    "Triy1":  50, //triangle left corner y
+    "Trix2":  0,  //triangle top corner x
+    "Triy2": -50,  //triangle top corner y
+    "Trix3": 29, //triangle right corner x
+    "Triy3": 50, //triangle right corner y
 
   "arcx": 0, //x pos of arc
   "arcy": 0, //y pos pf arc

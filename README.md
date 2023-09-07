@@ -31,6 +31,10 @@ The parameters used in the skecth.js are:
 
   For the animation/interpolation of the letterforms I wanted quite a smooth transition between the letters. I tried animating it so that it went from the first letter and transitions to the default character and then transitions into the new letter. This worked and had somewhat of a smooth transition, but I think it could be better. In a critique session during class there was mention of making the defualt letter be the little circle in the middle and then having the arc be in it's full form (full circle). This way when transitioning between letters the full circle would transform into the arcs of the letters, allowing for a smoother transition. Another comment that came up was to try out expanding the letters in the middle (when the defualt occurs). 
 
+  I added in the arc (as a complete circle) to the default mode for the interpolation. This appeared to give a smoother transition between letters. because now instead of swithing straight from an arc to another arc in a slightly different position (more closed or more open) there is a better transition phase, where the arc goes into a full circle, then opens up again to create the arc of the new letter. Now after some more feedback, I want to make the default character for the middle part of the interpolation look more art deco like, to really lean into the style. 
+
+  As much as I love the colour palette with the blues and greens, it isn't very art deco, therefore, I decided to test out the look of a more art deco colour palette. 
+
   Overall, I have used 16 parameters for this typeface, and I believe I used each parameter to its full advantage. 
   
   These are the parameters I used for the final code:

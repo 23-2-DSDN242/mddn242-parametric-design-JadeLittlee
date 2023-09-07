@@ -1,15 +1,16 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#a7d7f2"//"#caf0f8";
+var systemBackgroundColor = "#a7d7f2"; //"#15173d"; - more art deco colour background
 var systemLineColor = "#000090";
 var systemBoxColor = "#00c800";
+//art deco colours hex codes: #15173d, #87ccb0, #15173d, #91d4cf
 
 /* internal constants */
 // const darkBlue  = "#0077b6";
 // const lightBlue  = "#90e0ef";
-const darkGreen  =  "#20baad"; //"#0077b6";
+const darkGreen  =  "#20baad"; //"#20baad";
 const lightGreen  =  "#9cf0e2"; //"#90e0ef";
 const strokeColor  = "#9cf0e2";
-const shadowcolor = "#6890a6";
+const shadowcolor =  "#6890a6"; //"#494b7a";
 
 /*
  * Draw the letter given the letterData
@@ -149,14 +150,14 @@ function interpolate_letter(percent, oldObj, newObj) {
   else if(percent >=30 && percent < 60){ //default character from 30% to 60%
     new_letter["offsetx"]  = map(percent, 30, 60, 0, 0);
     new_letter["offsety"]     = map(percent, 30, 60, 0, 0);
-    new_letter["Trix1"]   = map(percent, 30, 60, 0, 0);
+    new_letter["Trix1"]   = map(percent, 30, 60, 0, -32);
     new_letter["Trix2"]    = map(percent, 30, 60, 0, 0);
-    new_letter["Trix3"]    = map(percent, 30, 60, 0, 0);
-    new_letter["Triy1"]    = map(percent, 30, 60, 0, 0);
-    new_letter["Triy2"]       = map(percent, 30, 60, 0, 0);
-    new_letter["Triy3"]      = map(percent, 30, 60, 0, 0);
-    new_letter["arcStart"]        = map(percent, 30, 60, 0, 0);
-    new_letter["arcStop"]     = map(percent, 30, 60, 0, 0);
+    new_letter["Trix3"]    = map(percent, 30, 60, 0, 29);
+    new_letter["Triy1"]    = map(percent, 30, 60, 0, 50);
+    new_letter["Triy2"]       = map(percent, 30, 60, 0, -50);
+    new_letter["Triy3"]      = map(percent, 30, 60, 0, 50);
+    new_letter["arcStart"]        = map(percent, 30, 60, 0, 183.6);
+    new_letter["arcStop"]     = map(percent, 30, 60, 0, 180);
     new_letter["arcx"]        = map(percent, 30, 60, 0, 0);
     new_letter["arcy"]     = map(percent, 30, 60, 0, 0);
     new_letter["linex"]        = map(percent, 30, 60, 0, 0);

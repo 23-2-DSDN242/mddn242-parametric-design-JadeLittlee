@@ -213,6 +213,48 @@ function draw () {
   }
 
   background(systemBackgroundColor);
+  //Art deco design
+  stroke(209,173,112);
+  strokeWeight(5);
+  noFill();
+
+  //top section for art deco design 
+  arc(480, 120, 60, 50, 180 , 0); //top arc
+
+  line(280,120,680,120); //top horizontal line
+
+  line(480,20,480,95); //middle top line vertical
+
+  line(460,30,470,95); //left top diagonal line
+  line(500,30,490,95); //right top diagonal line
+
+  line(440,50,460,100);  //second left diagonal from middle
+  line(520,50,500,100); //second right from middle diagonal line
+
+  line(420,70,450,110); //third left diagonal from middle
+  line(540,70,510,110); //thrid right diagonal from middle
+
+  line(400,90,440,120); //fourth left diagonal from middle
+  line(560,90,520,120); //fourth right diagonal from middle
+
+  //bottom section for art deco decoration
+  arc(480, 380, 60, 50, 0 , 180); //bottom arc
+  line(280,380,680,380); //bottom horizontal line
+
+  line(480,480,480,405); //middle bottom line vertical
+
+  line(460,470,470,405); //left bottom diagonal line
+  line(500,470,490,405); //right bottom diagonal line
+
+  line(440,450,460,400);  //bottom second left diagonal from middle 
+  line(520,450,500,400); // bottom second right from middle diagonal line
+
+  line(420,430,450,390); //bottom third left diagonal from middle
+  line(540,430,510,390); //bottom thrid right diagonal from middle
+
+  line(400,410,440,380); //bottom fourth left diagonal from middle
+  line(560,410,520,380); //bottom fourth right diagonal from middle
+
 
   // shorthand variables to allow margin
   var o = 20
