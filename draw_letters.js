@@ -1,16 +1,16 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#a7d7f2"; //"#15173d"; - more art deco colour background
+var systemBackgroundColor = "#613540"//"#a7d7f2"; //"#15173d"; - more art deco colour background
 var systemLineColor = "#000090";
 var systemBoxColor = "#00c800";
-//art deco colours hex codes: #15173d, #87ccb0, #15173d, #91d4cf
+//art deco colours hex codes: #b0903d #15173d, #87ccb0, #15173d, #91d4cf, #636168, #613540, #95daad,
 
 /* internal constants */
 // const darkBlue  = "#0077b6";
 // const lightBlue  = "#90e0ef";
-const darkGreen  =  "#20baad"; //"#20baad";
-const lightGreen  =  "#9cf0e2"; //"#90e0ef";
+const darkGreen  =  "#499e6f"; //#20baad // #65b88a //#499e6f
+const lightGreen  = "#95daad";//"#9cf0e2"; //"#90e0ef"; /
 const strokeColor  = "#9cf0e2";
-const shadowcolor =  "#6890a6"; //"#494b7a";
+const shadowcolor =  "#636168"//"#6890a6"; //"#494b7a";
 
 /*
  * Draw the letter given the letterData

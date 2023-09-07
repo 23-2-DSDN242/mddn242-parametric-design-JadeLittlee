@@ -33,7 +33,9 @@ The parameters used in the skecth.js are:
 
   I added in the arc (as a complete circle) to the default mode for the interpolation. This appeared to give a smoother transition between letters. because now instead of swithing straight from an arc to another arc in a slightly different position (more closed or more open) there is a better transition phase, where the arc goes into a full circle, then opens up again to create the arc of the new letter. Now after some more feedback, I want to make the default character for the middle part of the interpolation look more art deco like, to really lean into the style. 
 
-  As much as I love the colour palette with the blues and greens, it isn't very art deco, therefore, I decided to test out the look of a more art deco colour palette. 
+  I decided that I'd go all in with the art deco theme, and wanted to add a decorative element to the bacground for the exhibition page. I knew I wanted this to be gold, and wanted to pick ornamentation that was easily associated with art deco. Sunbursts were a very popular piece of art deco iconography during the 1920's and 30's, so I leaned into this to create my gold decorative element (sunburst). 
+
+  As much as I love the colour palette with the blues and greens, it isn't very art deco, therefore, I decided to test out the look of a more art deco colour palette. I knew what art deco colours look liked, but it did take me quite a while to string together a cohesive and contrasting colour palette. This is because I wanted the gold decorative banner to stand out from the background. But because the background ideally needed to be a darker colour – like the deep maroon colour I have chosen - the colours that were used for the letters needed to contrast well and stand out. This was the challenge I was having when pairing my letterss with the background colour. Eventually, I landed on the gold ornamentation, deep maroon background, dark green for parts of the letter form, and a lighter green for the other parts of the letter forms. 
 
   Overall, I have used 16 parameters for this typeface, and I believe I used each parameter to its full advantage. 
   
