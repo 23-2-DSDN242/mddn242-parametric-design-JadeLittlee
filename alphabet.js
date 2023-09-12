@@ -8,7 +8,7 @@ if (typeof systemBackgroundColor === 'undefined') {
 }
 
 if (typeof systemLineColor === 'undefined') {
-    var systemLineColor = "#000090";
+    var systemLineColor = "#b0903d";
 }
 
 if (typeof systemBoxColor === 'undefined') {

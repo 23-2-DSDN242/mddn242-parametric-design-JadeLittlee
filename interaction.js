@@ -8,7 +8,7 @@ if (typeof systemBackgroundColor === 'undefined') {
 }
 
 if (typeof systemLineColor === 'undefined') {
-    var systemLineColor = "#000090";
+    var systemLineColor = "#b0903d"; //Gold guide lines and interactio numbers
 }
 
 if (typeof systemBoxColor === 'undefined') {
@@ -98,6 +98,7 @@ let hot_key_press = false;
 function draw () {
   // clear screen
   background(systemBackgroundColor);
+  
 
   // draw the interpolation on the guidelines
   push();
@@ -116,6 +117,7 @@ function draw () {
 
   // draw lines
   stroke(systemLineColor);
+   //stroke(176,144,61);
   line(left_margin, 0, right_margin, 0);
   for(let i=left_margin; i<right_margin-8; i+=30) {
     line(i, 100, i+12, 100);

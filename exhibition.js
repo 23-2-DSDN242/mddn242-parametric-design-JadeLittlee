@@ -214,7 +214,7 @@ function draw () {
 
   background(systemBackgroundColor);
   //Art deco design
-  stroke(176,144,61); //stroke(209,173,112) - old gold colour
+  stroke(176,144,61); 
   strokeWeight(5);
   noFill();
 

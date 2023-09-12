@@ -1,16 +1,12 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#613540"//"#a7d7f2"; //"#15173d"; - more art deco colour background
-var systemLineColor = "#000090";
-var systemBoxColor = "#00c800";
-//art deco colours hex codes: #b0903d #15173d, #87ccb0, #15173d, #91d4cf, #636168, #613540, #95daad,
+var systemBackgroundColor = "#613540"//browny red colour for the background
+var systemLineColor = "#b0903d"; //gold
+var systemBoxColor = "#00c800"; //green border box
 
 /* internal constants */
-// const darkBlue  = "#0077b6";
-// const lightBlue  = "#90e0ef";
-const darkGreen  =  "#499e6f"; //#20baad // #65b88a //#499e6f
-const lightGreen  = "#95daad";//"#9cf0e2"; //"#90e0ef"; /
-const strokeColor  = "#9cf0e2";
-const shadowcolor =  "#636168"//"#6890a6"; //"#494b7a";
+const darkGreen  =  "#499e6f"; 
+const lightGreen  = "#95daad";
+const shadowcolor =  "#636168";//dark greyish colour that gives a nice shadow but stands out enough form the red background so that it is still visible//"#6890a6"; //"#494b7a";
 
 /*
  * Draw the letter given the letterData
@@ -19,6 +15,7 @@ const shadowcolor =  "#636168"//"#6890a6"; //"#494b7a";
  * following bounding box guideline:
  * from (0,0) to (100, 200)
  */
+
 function drawLetter(letterData) {
 
   // determine parameters //16 parameters
@@ -42,7 +39,8 @@ function drawLetter(letterData) {
   let lineposx2 = 50 + letterData["linex2"]; //bottom x of line
   let lineposy2 = 150 + letterData["liney2"]; // bottom y of line
 
-  //shadow of the letters
+  /* shadow of the letters */
+
   push();
   translate(-7,2);
   noStroke();
@@ -51,7 +49,7 @@ function drawLetter(letterData) {
   triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
   fill(shadowcolor);
-  ellipse(posx, posy, 10);
+  ellipse(posx, posy, 10); //size 10 for the circle is a constant
  
   noFill();
   stroke(shadowcolor);
@@ -64,18 +62,16 @@ function drawLetter(letterData) {
   pop();
  
 
-  //main code for letters
+  /* main code for letters */
   
-  noStroke(); // color/stroke setup
-  // stroke(strokeColor);
-  // strokeWeight(4);
+  noStroke(); 
 
   angleMode(DEGREES);
   fill(darkGreen);
   triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
   fill(lightGreen);
-  ellipse(posx, posy, 10);
+  ellipse(posx, posy, 10); //size 10 for the circle is a constant
  
   noFill();
   stroke(lightGreen);
@@ -85,47 +81,7 @@ function drawLetter(letterData) {
   stroke(darkGreen);
   strokeWeight(5);
   line(lineposx,lineposy,lineposx2,lineposy2);
-
-  // stroke(lightGreen);
-  // strokeWeight(4)
-  // line(lineposx-5,lineposy,lineposx2-5,lineposy2); //detail?
-
-  // push();
-  // rotate(60)
-  // rect(20, -50, 2, 25, 15); //x,y,l,w,curve size
-  // pop();
-
-  
-
 }
-
-// function interpolate_letter(percent, oldObj, newObj) {
-//   let new_letter = {};
-  
-//   new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
-//   new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
-
-//   new_letter["Trix1"] = map(percent, 0, 100, oldObj["Trix1"], newObj["Trix1"]);
-//   new_letter["Trix2"] = map(percent, 0, 100, oldObj["Trix2"], newObj["Trix2"]);
-//   new_letter["Trix3"] = map(percent, 0, 100, oldObj["Trix3"], newObj["Trix3"]);
-//   new_letter["Triy1"] = map(percent, 0, 100, oldObj["Triy1"], newObj["Triy1"]);
-//   new_letter["Triy2"] = map(percent, 0, 100, oldObj["Triy2"], newObj["Triy2"]);
-//   new_letter["Triy3"] = map(percent, 0, 100, oldObj["Triy3"], newObj["Triy3"]);
-
-//   new_letter["arcStart"] = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
-//   new_letter["arcStop"] = map(percent, 0, 100, oldObj["arcStop"], newObj["arcStop"]);
-//   new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
-//   new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
-
-  
-//     new_letter["linex"] = map(percent, 0, 100, oldObj["linex"], newObj["linex"]);
-//     new_letter["linex2"] = map(percent, 0, 100, oldObj["linex2"], newObj["linex2"]);
-//     new_letter["liney"] = map(percent, 0, 100, oldObj["liney"], newObj["liney"]);
-//     new_letter["liney2"] = map(percent, 0, 100, oldObj["liney2"], newObj["liney2"]);
-    
-  
-//   return new_letter;
-// }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
@@ -183,16 +139,12 @@ function interpolate_letter(percent, oldObj, newObj) {
     new_letter["liney"]        = map(percent, 60, 100, 0, newObj["liney"]);
     new_letter["liney2"]     = map(percent, 60, 100, 0, newObj["liney2"]);
 }
-  // new_letter["arcStart"] = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
-  // new_letter["arcStop"] = map(percent, 0, 100, oldObj["arcStop"], newObj["arcStop"]);
-  // new_letter["arcx"] = map(percent, 0, 100, oldObj["arcx"], newObj["arcx"]);
-  // new_letter["arcy"] = map(percent, 0, 100, oldObj["arcy"], newObj["arcy"]);
 
   return new_letter;
 }
 
-var swapWords = [ //can have spaces
-  "DECOTYPE", //this is what typeface is called
+var swapWords = [ 
+  "DECOTYPE", //this is what my typeface is called
   "ART DECO",
   " SIMPLE ",
   "GEOMETRY",
