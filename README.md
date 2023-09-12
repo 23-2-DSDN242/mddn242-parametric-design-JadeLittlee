@@ -37,7 +37,7 @@ The parameters used in the skecth.js are:
 
   As much as I love the colour palette with the blues and greens, it isn't very art deco, therefore, I decided to test out the look of a more art deco colour palette. I knew what art deco colours look liked, but it did take me quite a while to string together a cohesive and contrasting colour palette. This is because I wanted the gold decorative banner to stand out from the background. But because the background ideally needed to be a darker colour – like the deep maroon colour I have chosen - the colours that were used for the letters needed to contrast well and stand out. This was the challenge I was having when pairing my letterss with the background colour. Eventually, I landed on the gold ornamentation, deep maroon background, dark green for parts of the letter form, and a lighter green for the other parts of the letter forms. 
 
-  After changing the colour palette, the blue guidelines in the Interaction and alphabet section, and the blue percentages in the interaction section were clashing heaps with the maroon background. Therefore, I decided to edit those files so that the colour was gold – which is way more on theme with art deco and easier to see. 
+  After changing the colour palette, the blue guidelines in the Interaction and alphabet section, and the blue percentages in the interaction section were clashing heaps with the maroon background. Therefore, I decided to edit those files so that the colour was gol (the same gold used in the exhibition file) – which is way more on theme with art deco and easier to see. 
 
   Overall, I have used 16 parameters for this typeface, and I believe I used each parameter to its full advantage when achieving this art deco look. 
   
