@@ -1,48 +1,25 @@
 const alphabet = {
   "default": { 
-  //   "offsetx": 0, //position x of ellipse
-  //   "offsety": 0, //position y of ellipse
 
-  //   "Trix1": -32, //triangle left corner x
-  //   "Triy1":  50, //triangle left corner y
-  //   "Trix2":  0,  //triangle top corner x
-  //   "Triy2": -50,  //triangle top corner y
-  //   "Trix3": 29, //triangle right corner x
-  //   "Triy3": 50, //triangle right corner y
-
-  // "arcx": 0, //x pos of arc
-  // "arcy": 0, //y pos pf arc
-  // "arcStart": 183.6, //start of arc
-  // "arcStop": 180, //end of arc
-  
-  // "linex": 0, //top x of line
-  // "liney": 0, //top y of line
-  // "linex2": 0, //bottom x of line
-  // "liney2": 0, //bottom y of line
-
-  //option 1 
   "offsetx": -0.6, //position x of ellipse
-  "offsety": -40, //position y of ellipse
+  "offsety": -28, //position y of ellipse
 
   "Trix1": -18, //triangle left corner x
-  "Triy1": 0, //triangle left corner y
+  "Triy1": -5, //triangle left corner y
   "Trix2": 0, //triangle top corner x
-  "Triy2": 36, //triangle top corner y
+  "Triy2": 30, //triangle top corner y
   "Trix3": 16, //triangle right corner x
-  "Triy3": 0, //triangle right corner y
+  "Triy3": -5, //triangle right corner y
 
   "arcx": 0, //x pos of arc
-  "arcy": -2, //y pos of arc
-  "arcStart": 230.4, //start of arc
-  "arcStop": 313.2, //end of arc
-
-  "linex": 0, //top x of line
-  "liney": -60, //top y of line
-  "linex2": 0, //bottom x of line
-  "liney2": 42, //bottom y of line
-
-  //option 2
+  "arcy": 8, //y pos of arc
+  "arcStart": 237.6, //start of arc
+  "arcStop": 302.4, //end of arc
  
+  "linex": 0, //top x of line
+  "liney": -44, //top y of line
+  "linex2": 0, //bottom x of line
+  "liney2": 38, //bottom y of line
 
   },
   "A": {
@@ -323,26 +300,6 @@ const alphabet = {
   },
   "M": {
 
-  //   "offsetx": 0, //position x of ellipse
-  //   "offsety": -10, //position y of ellipse
-   
-  //   "Trix1": -45, //triangle left corner x
-  //   "Triy1": -45, //triangle left corner y
-  //   "Trix2": -10, //triangle top corner x
-  //   "Triy2": -15, //triangle top corner y
-  //   "Trix3": -45, //triangle right corner x
-  //   "Triy3": 50, //triangle right corner y
-
-  //   "arcx": 10, //x pos of arc
-  //   "arcy": 0, //y pos pf arc
-  //   "arcStart": 280.8, //start of arc
-  // "arcStop": 3.6, //end of arc
-
-  // "linex": 48, //top x of line
-  // "liney": 20, //top y of line
-  // "linex2": 48, //bottom x of line
-  // "liney2": 48, //bottom y of line
-
   "offsetx": 0, //position x of ellipse
     "offsety": -10, //position y of ellipse
 
@@ -418,7 +375,7 @@ const alphabet = {
     "Trix1": -40, //triangle left corner x
     "Triy1": -50, //triangle left corner y
   "Trix2": -20, //triangle top corner x
-  "Triy2": 110, //triangle top corner y
+  "Triy2": 120, //triangle top corner y
   "Trix3": 0, //triangle right corner x
   "Triy3": -50, //triangle right corner y
 
@@ -428,9 +385,9 @@ const alphabet = {
   "arcStop": 126, //end of arc
 
   "linex": -45, //top x of line
-  "liney": -48, //top y of line
+  "liney": -46, //top y of line
   "linex2": -25, //bottom x of line
-  "liney2": 105, //bottom y of line 
+  "liney2": 118, //bottom y of line 
     
   },
   "Q": {
@@ -574,26 +531,6 @@ const alphabet = {
   },
   "W": {
 
-  //   "offsetx": 0, //position x of ellipse
-  //   "offsety": 0, //position y of ellipse
-   
-  //   "Trix1": -45, //triangle left corner x
-  //   "Triy1": -45, //triangle left corner y
-  //   "Trix2": -10, //triangle top corner x
-  //   "Triy2": 20, //triangle top corner y
-  //   "Trix3": -45, //triangle right corner x
-  //   "Triy3": 50, //triangle right corner y
-
-  //   "arcx": 12, //x pos of arc
-  //   "arcy": 0, //y pos of arc
-  //   "arcStart": 370, //bottom x of line
-  //   "arcStop": 90, //bottom y of line
-
-  // "linex": 48, //top x of line
-  // "liney": -40, //top y of line
-  // "linex2": 48, //bottom x of line
-  // "liney2": -10, //bottom y of line
-
   "offsetx": 0, //position x of ellipse
   "offsety": 0, //position y of ellipse
  
@@ -646,7 +583,7 @@ const alphabet = {
     "Trix1": 0, //triangle left corner x
     "Triy1": -50, //triangle left corner y
   "Trix2": 20, //triangle top corner x
-  "Triy2": 110, //triangle top corner y
+  "Triy2": 120, //triangle top corner y
   "Trix3": 40, //triangle right corner x
   "Triy3": -50, //triangle right corner y
 
@@ -655,33 +592,13 @@ const alphabet = {
   "arcStart": 68, //start of arc
   "arcStop": 190, //end of arc
 
-  "linex": -10, //top x of line
-  "liney": 100, //top y of line
-  "linex2": 20, //bottom x of line
-  "liney2": 120, //bottom y of line
+  "linex": -15, //top x of line
+  "liney": 95, //top y of line
+  "linex2": 15, //bottom x of line
+  "liney2": 115, //bottom y of line
    
   },
   "Z": {
-
-    // "offsetx": 0, //position x of ellipse
-    // "offsety": -35,  //position y of ellipse
-
-    // "Trix1": -30, //triangle left corner x
-    // "Triy1":  50, //triangle left corner y
-    // "Trix2":  30, //triangle top corner x
-    // "Triy2": -40, //triangle top corner y
-    // "Trix3": 50, //triangle right corner x
-    // "Triy3": 50, //triangle right corner y
-
-    // "arcx": 0, //x pos of arc
-    // "arcy": 0, //y pos pf arc
-    // "arcStart": 0, //start of arc
-    // "arcStop": 0, //end of arc
-
-    // "linex": -30, //top x of line
-    // "liney": -50, //top y of line
-    // "linex2": 30, //bottom x of line
-    // "liney2": -50, //bottom y of line
 
     "offsetx": 15,  //position x of ellipse
     "offsety": -35,  //position y of ellipse
@@ -705,26 +622,6 @@ const alphabet = {
     
   },
   "0": {
-
-    // "offsetx": 0, //position x of ellipse
-    // "offsety": -130, //position y of ellipse
-
-    // "Trix1": -36, //triangle left corner x
-    // "Triy1": -30, //triangle left corner y
-    // "Trix2": 36, //triangle top corner x
-    // "Triy2": -120, //triangle top corner y
-    // "Trix3": 36, //triangle right corner x
-    // "Triy3": -30, //triangle right corner y
-
-    // "arcx": 0, //x pos of arc
-    // "arcy": 0, //y pos of arc
-    // "arcStart": 360, //start of arc
-    // "arcStop": 176.4, //stop of arc
-    
-    // "linex": -36, //top x of line
-    // "liney": -110,  //top y of line
-    // "linex2": -36, //bottom x of line
-    // "liney2": -50, //bottom y of line
 
     "offsetx": 0, //position x of ellipse
     "offsety": -50, //position y of ellipse
@@ -753,7 +650,6 @@ const alphabet = {
     "offsetx": 0, //position x of ellipse
     "offsety": -135, //position y of ellipse
 
-
     "Trix1": -34, //triangle left corner x
     "Triy1":  40, //triangle left corner y
     "Trix2":  0, //triangle top corner x
@@ -774,26 +670,6 @@ const alphabet = {
     
   },
   "2": {
-
-  //   "offsetx": -10, //position x of ellipse
-  //   "offsety": -100, //position y of ellipse
-
-  //   "Trix1": -44, //triangle left corner x
-  //   "Triy1": 34, //triangle left corner y
-  //   "Trix2": 40, //triangle top corner x
-  //   "Triy2": 34, //triangle top corner y
-  //   "Trix3": -5, //triangle right corner x
-  //   "Triy3": -50, //triangle right corner y
-
-  // "arcx": -10, //x pos of arc
-  // "arcy": -100, //y pos pf arc
-  // "arcStart": 227.6, //start of arc
-  // "arcStop": 72, //end of arc
-
-  // "linex": -35, //top x of line
-  // "liney": 45, //top y of line
-  // "linex2": 40, //bottom x of line
-  // "liney2": 45, //bottom y of line
 
   "offsetx": -5, //position x of ellipse
   "offsety": -100, //position y of ellipse
@@ -863,72 +739,6 @@ const alphabet = {
 
   },
   "5": {
-   
-    // "offsetx": 5, //25 //position x of ellipse
-    // "offsety": 0, //-130 //position y of ellipse
-
-    // "Trix1": -10, //triangle left corner x
-    // "Triy1": -130, //triangle left corner y
-    // "Trix2": -10, //triangle top corner x
-    // "Triy2": -60, //triangle top corner y
-    // "Trix3": 50, //triangle right corner x
-    // "Triy3": -130, //triangle right corner y
-
-    // "arcx": 5, //x pos of arc
-    // "arcy": 0, //y pos pf arc
-    // "arcStart": 256.4, //start of arc
-    // "arcStop": 140.4, //end of arc
-
-    // "linex": 0, //top x of line
-    // "liney": -140, //top y of line
-    // "linex2": 40, //bottom x of line
-    // "liney2": -140, //bottom y of line
-
-    //option one
-
-    // "offsetx": 0, //25 //position x of ellipse
-    // "offsety": 0, //-130 //position y of ellipse
-
-    // "Trix1": -15, //triangle left corner x
-    // "Triy1": -140, //triangle left corner y
-    // "Trix2": -15, //triangle top corner x
-    // "Triy2": -60, //triangle top corner y
-    // "Trix3": 50, //triangle right corner x
-    // "Triy3": -140, //triangle right corner y
-
-    // "arcx": 0, //x pos of arc
-    // "arcy": 0, //y pos pf arc
-    // "arcStart": 256.4, //start of arc
-    // "arcStop": 140.4, //end of arc
-
-    // "linex": -25, //top x of line
-    // "liney": -135, //top y of line
-    // "linex2": -25, //bottom x of line
-    // "liney2": -65, //bottom y of line
-
-    //option 2
-
-    // "offsetx": 0, //25 //position x of ellipse
-    // "offsety": 0, //-130 //position y of ellipse
-
-    // "Trix1": -20, //triangle left corner x
-    // "Triy1": -140, //triangle left corner y
-    // "Trix2": -20, //triangle top corner x
-    // "Triy2": -100, //triangle top corner y
-    // "Trix3": 50, //triangle right corner x
-    // "Triy3": -140, //triangle right corner y
-
-    // "arcx": 0, //x pos of arc
-    // "arcy": 0, //y pos pf arc
-    // "arcStart": 256.4, //start of arc
-    // "arcStop": 140.4, //end of arc
-
-    // "linex": -15, //top x of line
-    // "liney": -90, //top y of line
-    // "linex2": -15, //bottom x of line
-    // "liney2": -50, //bottom y of line
-
-    //option 3
 
     "offsetx": 0, //25 //position x of ellipse
     "offsety": 0, //-130 //position y of ellipse
@@ -976,8 +786,8 @@ const alphabet = {
   },
   "7": {
 
-    "offsetx": 10, //25 //position x of ellipse
-    "offsety": -120, //-130 //position y of ellipse
+    "offsetx": 10, //position x of ellipse
+    "offsety": -120, //position y of ellipse
 
     "Trix1": -10, //triangle left corner x
     "Triy1":  40, //triangle left corner y

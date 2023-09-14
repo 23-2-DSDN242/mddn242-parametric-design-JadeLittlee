@@ -1,4 +1,4 @@
-/* these are optional special variables which will change the system */
+/* colour variables */
 var systemBackgroundColor = "#613540"//browny red colour for the background
 var systemLineColor = "#b0903d"; //gold
 var systemBoxColor = "#00c800"; //green border box
@@ -8,13 +8,6 @@ const darkGreen  =  "#499e6f";
 const lightGreen  = "#95daad";
 const shadowcolor =  "#636168";//dark greyish colour that gives a nice shadow but stands out enough form the red background so that it is still visible//"#6890a6"; //"#494b7a";
 
-/*
- * Draw the letter given the letterData
- *
- * Letters should always be drawn with the
- * following bounding box guideline:
- * from (0,0) to (100, 200)
- */
 
 function drawLetter(letterData) {
 
@@ -39,8 +32,8 @@ function drawLetter(letterData) {
   let lineposx2 = 50 + letterData["linex2"]; //bottom x of line
   let lineposy2 = 150 + letterData["liney2"]; // bottom y of line
 
-  /* shadow of the letters */
 
+  /* shadow of the letters */
   push();
   translate(-7,2);
   noStroke();
@@ -63,7 +56,6 @@ function drawLetter(letterData) {
  
 
   /* main code for letters */
-  
   noStroke(); 
 
   angleMode(DEGREES);
@@ -71,12 +63,12 @@ function drawLetter(letterData) {
   triangle(Triposx1, Triposy1, Triposx2, Triposy2, Triposx3, Triposy3);
 
   fill(lightGreen);
-  ellipse(posx, posy, 10); //size 10 for the circle is a constant
+  ellipse(posx, posy, 10); //size 10 is a constant across all the ellipses
  
   noFill();
   stroke(lightGreen);
   strokeWeight(15);
-  arc(Arcx, Arcy, 70, 70, start , stop);
+  arc(Arcx, Arcy, 70, 70, start , stop); //size 70 is a constant across all the arcs
 
   stroke(darkGreen);
   strokeWeight(5);
@@ -103,7 +95,7 @@ function interpolate_letter(percent, oldObj, newObj) {
     new_letter["liney"]        = map(percent, 0, 40, oldObj["liney"], 0);
     new_letter["liney2"]     = map(percent, 0, 40, oldObj["liney2"], 0);
   }
-  else if(percent >=30 && percent < 60){ //default character from 30% to 60%
+  else if(percent >=30 && percent < 60){ //art deco themed default character from 30% to 60%
     new_letter["offsetx"]  = map(percent, 30, 60, 0, 0);
     new_letter["offsety"]     = map(percent, 30, 60, 0, 0);
     new_letter["Trix1"]   = map(percent, 30, 60, 0, -32);
@@ -143,12 +135,15 @@ function interpolate_letter(percent, oldObj, newObj) {
   return new_letter;
 }
 
+/*These are my custom words that fit my theme of art deco for the exhibition display. I have also included a showcase of all the numbers.*/
 var swapWords = [ 
   "DECOTYPE", //this is what my typeface is called
   "ART DECO",
+  "SUNBURST",
   " SIMPLE ",
   "GEOMETRY",
   "STYLISH!",
-  "12345678",
+  "01234567",
+  "23456789",
  
 ]

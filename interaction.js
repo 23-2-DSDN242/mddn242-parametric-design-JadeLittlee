@@ -8,7 +8,7 @@ if (typeof systemBackgroundColor === 'undefined') {
 }
 
 if (typeof systemLineColor === 'undefined') {
-    var systemLineColor = "#b0903d"; //Gold guide lines and interactio numbers
+    var systemLineColor = "#b0903d"; //Gold guide lines and interaction numbers
 }
 
 if (typeof systemBoxColor === 'undefined') {
@@ -18,7 +18,7 @@ if (typeof systemBoxColor === 'undefined') {
 const canvasWidth = 960;
 const canvasHeight = 500;
 
-// these variables are used for animation
+// these variables are used for the animation
 let soloCurLetter = "B";
 let soloLastLetter = "A"
 let soloPrevObj = alphabet["default"];
