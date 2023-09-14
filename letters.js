@@ -6,8 +6,8 @@ const alphabet = {
 
   "Trix1": -18, //triangle left corner x
   "Triy1": -5, //triangle left corner y
-  "Trix2": 0, //triangle top corner x
-  "Triy2": 30, //triangle top corner y
+  "Trix2": 0, //triangle bottom corner x
+  "Triy2": 30, //triangle bottom corner y
   "Trix3": 16, //triangle right corner x
   "Triy3": -5, //triangle right corner y
 
@@ -167,8 +167,8 @@ const alphabet = {
 
     "Trix1": 0, //triangle left corner x
     "Triy1": -50, //triangle left corner y
-  "Trix2": 20, //triangle top corner x
-  "Triy2": 120, //triangle top corner y
+  "Trix2": 20, //triangle bottom corner x
+  "Triy2": 120, //triangle bottom corner y
   "Trix3": 40, //triangle right corner x
   "Triy3": -50, //triangle right corner y
 
@@ -211,11 +211,11 @@ const alphabet = {
     "offsetx": -5, //position x of ellipse
     "offsety": -80, //position y of ellipse
 
-    "Trix1": -37, //triangle left corner x
+    "Trix1": -27, //triangle left corner x
     "Triy1":  50, //triangle left corner y
     "Trix2":  -5,  //triangle top corner x
     "Triy2": -50,  //triangle top corner y
-    "Trix3": 29, //triangle right corner x
+    "Trix3": 19, //triangle right corner x
     "Triy3": 50, //triangle right corner y
 
     "arcx": 18, //x pos of arc
@@ -223,10 +223,10 @@ const alphabet = {
     "arcStart": 0, //start of arc
     "arcStop": 0, //end of arc
     
-    "linex": 35, //top x of line
-    "liney": 48, //top y of line
-    "linex2": 5,  //bottom x of line
-    "liney2": -48,  //bottom y of line
+    "linex": 5, //top x of line
+    "liney": -48, //top y of line
+    "linex2": 28,  //bottom x of line
+    "liney2": 48,  //bottom y of line
 
   },
   "J": {
@@ -236,8 +236,8 @@ const alphabet = {
 
     "Trix1": -10, //triangle left corner x 
     "Triy1": -50, //triangle left corner y 
-    "Trix2": 0, //triangle top corner x 
-    "Triy2": 50, //triangle top corner y 
+    "Trix2": 0, //triangle bottom corner x 
+    "Triy2": 50, //triangle bottom corner y 
     "Trix3": 10, //triangle right corner x
     "Triy3": -50, //triangle right corner y
 
@@ -282,8 +282,8 @@ const alphabet = {
 
     "Trix1": -35, //triangle left corner x
     "Triy1": -140, //triangle left corner y
-    "Trix2": -25, //triangle top corner x
-    "Triy2": -45, //triangle top corner y
+    "Trix2": -25, //triangle bottom corner x
+    "Triy2": -45, //triangle bottom corner y
     "Trix3": -15, //triangle right corner x
     "Triy3": -140, //triangle right corner y
 
@@ -305,8 +305,8 @@ const alphabet = {
 
   "Trix1": -50, //triangle left corner x
   "Triy1": -42, //triangle left corner y
-  "Trix2": -36, //triangle top corner x
-  "Triy2": 50, //triangle top corner y
+  "Trix2": -36, //triangle bottom corner x
+  "Triy2": 50, //triangle bottom corner y
   "Trix3": -18, //triangle right corner x
   "Triy3": -42, //triangle right corner y
 
@@ -374,8 +374,8 @@ const alphabet = {
 
     "Trix1": -40, //triangle left corner x
     "Triy1": -50, //triangle left corner y
-  "Trix2": -20, //triangle top corner x
-  "Triy2": 120, //triangle top corner y
+  "Trix2": -20, //triangle bottom corner x
+  "Triy2": 120, //triangle bottom corner y
   "Trix3": 0, //triangle right corner x
   "Triy3": -50, //triangle right corner y
 
@@ -397,8 +397,8 @@ const alphabet = {
 
     "Trix1": 0, //triangle left corner x
     "Triy1": -50, //triangle left corner y
-  "Trix2": 20, //triangle top corner x
-  "Triy2": 120, //triangle top corner y
+  "Trix2": 20, //triangle bottom corner x
+  "Triy2": 120, //triangle bottom corner y
   "Trix3": 40, //triangle right corner x
   "Triy3": -50, //triangle right corner y
 
@@ -490,8 +490,8 @@ const alphabet = {
 
     "Trix1": -50, //triangle left corner x
     "Triy1": -50, //triangle left corner y
-    "Trix2": -40, //triangle top corner x
-    "Triy2": -30, //triangle top corner y
+    "Trix2": -40, //triangle bottom corner x
+    "Triy2": -30, //triangle bottom corner y
     "Trix3": -30, //triangle right corner x
     "Triy3": -50, //triangle right corner y
 
@@ -513,8 +513,8 @@ const alphabet = {
 
     "Trix1": -37, //triangle left corner x
     "Triy1":  -50, //triangle left corner y
-    "Trix2":  -5,  //triangle top corner x
-    "Triy2": 50,  //triangle top corner y
+    "Trix2":  -5,  //triangle bottom corner x
+    "Triy2": 50,  //triangle bottom corner y
     "Trix3": 29,  //triangle right corner x
     "Triy3": -50,  //triangle right corner y
 
@@ -650,11 +650,11 @@ const alphabet = {
     "offsetx": 0, //position x of ellipse
     "offsety": -135, //position y of ellipse
 
-    "Trix1": -34, //triangle left corner x
+    "Trix1": -24, //triangle left corner x
     "Triy1":  40, //triangle left corner y
     "Trix2":  0, //triangle top corner x
     "Triy2": -120, //triangle top corner y
-    "Trix3": 34, //triangle right corner x
+    "Trix3": 24, //triangle right corner x
     "Triy3": 40, //triangle right corner y
 
     "arcx": 18, //x pos of arc
@@ -667,7 +667,6 @@ const alphabet = {
     "linex2": -40, //bottom x of line
     "liney2": -105, //bottom y of line
 
-    
   },
   "2": {
 
@@ -694,25 +693,25 @@ const alphabet = {
   },
   "3": {
 
-    "offsetx": 5, //25 //position x of ellipse
+    "offsetx": 0, //25 //position x of ellipse
     "offsety": 0, //-130 //position y of ellipse
 
-    "Trix1": -50, //triangle left corner x
+    "Trix1": -45, //triangle left corner x
     "Triy1": -140, //triangle left corner y
-    "Trix2": 10, //triangle top corner x
-    "Triy2": -60, //triangle top corner y
+    "Trix2": 30, //triangle bottom corner x
+    "Triy2": -110, //triangle bottom corner y
     "Trix3": 50, //triangle right corner x
     "Triy3": -140, //triangle right corner y
 
-    "arcx": 5, //x pos of arc
+    "arcx": 0, //x pos of arc
     "arcy": 0, //y pos pf arc
     "arcStart": 256.4, //start of arc
     "arcStop": 140.4, //end of arc
 
-    "linex": 57, //top x of line
-    "liney": -135, //top y of line
-    "linex2": 20, //bottom x of line
-    "liney2": -60, //bottom y of line
+    "linex": 25, //top x of line
+    "liney": -100, //top y of line
+    "linex2": 0, //bottom x of line
+    "liney2": -55, //bottom y of line
 
   },
   "4": {
@@ -745,8 +744,8 @@ const alphabet = {
 
     "Trix1": -20, //triangle left corner x
     "Triy1": -140, //triangle left corner y
-    "Trix2": -20, //triangle top corner x
-    "Triy2": -50, //triangle top corner y
+    "Trix2": -20, //triangle bottom corner x
+    "Triy2": -50, //triangle bottom corner y
     "Trix3": 0, //triangle right corner x
     "Triy3": -140, //triangle right corner y
 
@@ -768,8 +767,8 @@ const alphabet = {
 
     "Trix1": -10, //triangle left corner x
     "Triy1": -140, //triangle left corner y
-    "Trix2": -30, //triangle top corner x
-    "Triy2": -50, //triangle top corner y
+    "Trix2": -30, //triangle bottom corner x
+    "Triy2": -50, //triangle bottom corner y
     "Trix3": 30, //triangle right corner x
     "Triy3": -140, //triangle right corner y
 
@@ -814,8 +813,8 @@ const alphabet = {
 
     "Trix1": -30, //triangle left corner x
     "Triy1": -140, //triangle left corner y
-    "Trix2": 0, //triangle top corner x
-    "Triy2": -50, //triangle top corner y
+    "Trix2": 0, //triangle bottom corner x
+    "Triy2": -50, //triangle bottom corner y
     "Trix3": 30, //triangle right corner x
     "Triy3": -140, //triangle right corner y
 

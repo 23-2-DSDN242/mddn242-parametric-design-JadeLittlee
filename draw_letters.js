@@ -4,23 +4,23 @@ var systemLineColor = "#b0903d"; //gold
 var systemBoxColor = "#00c800"; //green border box
 
 /* internal constants */
-const darkGreen  =  "#499e6f"; 
-const lightGreen  = "#95daad";
-const shadowcolor =  "#636168";//dark greyish colour that gives a nice shadow but stands out enough form the red background so that it is still visible//"#6890a6"; //"#494b7a";
+const darkGreen  =  "#499e6f"; //A nice Art Deco medium green
+const lightGreen  = "#95daad"; // A nice Art Deco light green
+const shadowcolor =  "#636168";//dark greyish colour that gives a nice shadow but stands out enough from the red background so that it is still visible
 
 
 function drawLetter(letterData) {
 
   // determine parameters //16 parameters
-  let posx = 50  + letterData["offsetx"]; //ellipse x pos
-  let posy = 150 + letterData["offsety"]; //ellipse y pos
+  let posx = 50  + letterData["offsetx"]; //ellipse x position
+  let posy = 150 + letterData["offsety"]; //ellipse y position
 
-  let Triposx1 = 50 + letterData["Trix1"]; //triangle left corner x pos
-  let Triposy1 =  150 + letterData["Triy1"]; //triangle left corner y pos
-  let Triposx2 = 50 + letterData["Trix2"]; //triangle top corner x pos
-  let Triposy2 =  150 + letterData["Triy2"]; //triangle top corner y pos
-  let Triposx3 = 50 + letterData["Trix3"]; //triangle right corner x pos
-  let Triposy3 =  150 + letterData["Triy3"]; //triangle right corner y pos
+  let Triposx1 = 50 + letterData["Trix1"]; //triangle left corner x position
+  let Triposy1 =  150 + letterData["Triy1"]; //triangle left corner y position
+  let Triposx2 = 50 + letterData["Trix2"]; //triangle top corner x position or triangle bottom corner x position - depending on the letter
+  let Triposy2 =  150 + letterData["Triy2"]; //triangle top corner y position or triangle bottom corner y position - depending on the letter
+  let Triposx3 = 50 + letterData["Trix3"]; //triangle right corner x position
+  let Triposy3 =  150 + letterData["Triy3"]; //triangle right corner y position
 
   let Arcx = 50 + letterData["arcx"]; //x of arc
   let Arcy = 150 + letterData["arcy"]; //y of arc

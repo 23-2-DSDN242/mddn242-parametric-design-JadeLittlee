@@ -41,11 +41,11 @@ const letterC = {
   "offsety3": 40, //triangle right corner y
 }
 
-const backgroundColor  =  "#a7d7f2"; //"#caf0f8" (light blue)
-const strokeColor      =  "#9cf0e2"//"#03045e";
+const backgroundColor  =  "#a7d7f2"; //light blue
+const strokeColor      =  "#9cf0e2"  //light green - the same as triangle and small ellipse light green
 
-const darkGreen  =  "#20baad"; //"#0077b6";
-const lightGreen  =  "#9cf0e2"; //"#90e0ef";
+const darkGreen  =  "#20baad"; 
+const lightGreen  =  "#9cf0e2";
 
 function setup () {
   // create the drawing canvas, save the canvas element
@@ -87,21 +87,13 @@ function drawLetter(posx, posy, letterData) {
   let pos5x = posx + letterData["offsetx3"]; //triangle right corner x pos
   let pos5y =  posy + letterData["offsety3"]; //triangle right corner y pos
 
-
-  let start = posx + letterData["offsetx4"];
-  let stop = posy + letterData["offsety4"];
-
-  // draw one big circle, a small circle, and a triangle
-  fill(darkGreen); //constant big circle
-  ellipse(posx, posy, 150);
+  /* drawing one big circle, a small circle, and a triangle */
+  fill(darkGreen); 
+  ellipse(posx, posy, 150); //constant big circle
   fill(lightGreen);
   ellipse(pos2x, pos2y, size2, size2);
-  triangle(pos3x, pos3y, pos4x, pos4y, pos5x, pos5y); //260,330,290,270,320,330
-  // push();
-  // noFill();
-  // strokeWeight(15);
-  // arc(posx, posy, 60, 60, start , stop);
-  // pop();
+  triangle(pos3x, pos3y, pos4x, pos4y, pos5x, pos5y); 
+  
 }
 
 function keyTyped() {
