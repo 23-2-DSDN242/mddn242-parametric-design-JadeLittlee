@@ -554,8 +554,8 @@ const alphabet = {
   },
   "X": {
    
-    "offsetx": 25, //25 //position x of ellipse
-    "offsety": 0, //-130 //position y of ellipse
+    "offsetx": 25,  //position x of ellipse
+    "offsety": 0,  //position y of ellipse
 
     "Trix1": -45, //triangle left corner x
     "Triy1": 0, //triangle left corner y
@@ -693,8 +693,8 @@ const alphabet = {
   },
   "3": {
 
-    "offsetx": 0, //25 //position x of ellipse
-    "offsety": 0, //-130 //position y of ellipse
+    "offsetx": 0, //position x of ellipse
+    "offsety": 0,  //position y of ellipse
 
     "Trix1": -45, //triangle left corner x
     "Triy1": -140, //triangle left corner y
@@ -739,8 +739,8 @@ const alphabet = {
   },
   "5": {
 
-    "offsetx": 0, //25 //position x of ellipse
-    "offsety": 0, //-130 //position y of ellipse
+    "offsetx": 0,  //position x of ellipse
+    "offsety": 0, //position y of ellipse
 
     "Trix1": -20, //triangle left corner x
     "Triy1": -140, //triangle left corner y
@@ -762,8 +762,8 @@ const alphabet = {
   },
   "6": {
 
-    "offsetx": 0, //25 //position x of ellipse
-    "offsety": 0, //-130 //position y of ellipse
+    "offsetx": 0, //position x of ellipse
+    "offsety": 0,  //position y of ellipse
 
     "Trix1": -10, //triangle left corner x
     "Triy1": -140, //triangle left corner y

@@ -6,7 +6,7 @@ var systemBoxColor = "#00c800"; //green border box
 /* internal constants */
 const darkGreen  =  "#499e6f"; //A nice Art Deco medium green
 const lightGreen  = "#95daad"; // A nice Art Deco light green
-const shadowcolor =  "#636168";//dark greyish colour that gives a nice shadow but stands out enough from the red background so that it is still visible
+const shadowcolor =  "#636168";//Dark greyish colour that gives a nice shadow but stands out enough from the red background so that it is still visible
 
 
 function drawLetter(letterData) {
@@ -22,15 +22,15 @@ function drawLetter(letterData) {
   let Triposx3 = 50 + letterData["Trix3"]; //triangle right corner x position
   let Triposy3 =  150 + letterData["Triy3"]; //triangle right corner y position
 
-  let Arcx = 50 + letterData["arcx"]; //x of arc
-  let Arcy = 150 + letterData["arcy"]; //y of arc
-  let start =  letterData["arcStart"]; //start of arc
-  let stop =  letterData["arcStop"]; //end of arc
+  let Arcx = 50 + letterData["arcx"]; //x position of arc
+  let Arcy = 150 + letterData["arcy"]; //y position of arc
+  let start =  letterData["arcStart"]; //The start position of the arc
+  let stop =  letterData["arcStop"]; //The end position of the arc
 
-  let lineposx = 50 + letterData["linex"]; //top x of line
-  let lineposy = 150 + letterData["liney"]; // top y of line
-  let lineposx2 = 50 + letterData["linex2"]; //bottom x of line
-  let lineposy2 = 150 + letterData["liney2"]; // bottom y of line
+  let lineposx = 50 + letterData["linex"]; //top x position of line
+  let lineposy = 150 + letterData["liney"]; // top y position of line
+  let lineposx2 = 50 + letterData["linex2"]; //bottom x position of line
+  let lineposy2 = 150 + letterData["liney2"]; // bottom y position of line
 
 
   /* shadow of the letters */
@@ -47,7 +47,7 @@ function drawLetter(letterData) {
   noFill();
   stroke(shadowcolor);
   strokeWeight(15);
-  arc(Arcx, Arcy, 70, 70, start , stop);
+  arc(Arcx, Arcy, 70, 70, start , stop); //size 70 is a constant across all the arcs
 
   stroke(shadowcolor);
   strokeWeight(5);
@@ -75,6 +75,7 @@ function drawLetter(letterData) {
   line(lineposx,lineposy,lineposx2,lineposy2);
 }
 
+/*This is the animation of the letterforms that occurs when transitioning between on letterform to the other. The animation starts at the first letterform and transitions to a default character, and then transitions into the new letterform*/
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
   if(percent < 30){ //animation starts with old letter and goes to the default character
